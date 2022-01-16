@@ -1,0 +1,148 @@
+$xs: 0px;
+$sm: 480px;
+$md: 1200px;
+$lg: 1800px;
+$xl: 192px;
+$primaryColor: #0c0b31;
+$secondaryColor: #0c0b31cc;
+$regularFont: chistayekanR;
+$boldFont: chistayekanB;
+
+.profileSidebarMenuContainer {
+    width: 100%;
+
+    & > .breadcrumbMobile {
+        display: flex;
+        padding: 20px 20px 0px 20px;
+        justify-content: flex-start;
+        align-items: center;
+        @media (min-width: $sm) {
+            display: none;
+        }
+
+        & > .breadcrumbCaretMobile {
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            border-radius: 20px;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 30px;
+
+            & > .breadcrumbCaret {
+                color: #536b88
+            }
+        }
+
+        & > .breadcrumbTitleMobile {
+            font-size: 18px;
+            font-weight: bold;
+            font-family: $regularFont
+        }
+    }
+
+    & > .sideBarDesktopContainer {
+        position: sticky;
+        top: 28px;
+        transition: all 250ms ease-in-out;
+        margin-bottom: 112px!important;
+    }
+    
+    & > .displayNone {
+        display: none;
+    }
+    
+    & > .sidebarMenuUl {
+        list-style: none;
+        margin: 0px;
+        padding: 0;
+
+        & > .sidebarMenuItemLink {
+            &:hover {
+                text-decoration: none !important;
+                & > svg {
+                    color: #0c0b31
+                }
+                & > p {
+                    color: #0c0b31;
+                }
+            }
+
+            & > .sidebarMenuItem {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-bottom: 20px;
+        
+                &:hover {
+                    & > svg {
+                        color: #0c0b31;
+                    }
+                    & > p {
+                        color: #0c0b31;
+                    }
+                }
+                & > a {
+                    &:hover {
+                        text-decoration: none !important;
+                    }
+                    & > p {
+                        color: #0c0b31cc
+                    }
+                    & > svg {
+                        color: #0c0b31cc
+                    }
+                }
+
+                & > .sidebarMenuItemIcon {
+                    width: 24px;
+                    margin-left: 10px;
+                    color: #0c0b31cc;
+                }
+                & > .sidebarMenuItemText {
+                    font-family: $regularFont;
+                    font-size: 13px;
+                    color: #0c0b31cc;
+                    line-height: 18px;
+                    @media (max-width: $lg) {
+                        font-size: 12px;
+                        line-height: 16px;
+                    }
+                }
+            }
+
+            & > .sidebarMenuItemActive {
+                & > p {
+                    color: #3f53d9 !important;
+                }
+                & > svg {
+                    color: #3f53d9 !important;
+                }
+            }
+        }
+    }
+}
+
+.sidebarDivider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 34px;
+    margin-bottom: 20px;
+    & > p {
+        font-size: 13px;
+        color: $secondaryColor;
+        display: inline-block;
+        width: 90px;
+        @media (max-width: $lg) {
+            font-size: 12px;
+        }
+    }
+}
+
+.sidebarMenuMoreItems {
+    margin-top: 20px;
+    margin-bottom: 0px!important;
+}

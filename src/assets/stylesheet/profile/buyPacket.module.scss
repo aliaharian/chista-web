@@ -1,0 +1,954 @@
+@use "../../../components/Kit/Style/kits.module.scss" as master;
+
+.root {
+  border-radius: 8px !important;
+  width: 532px !important;
+  height: auto !important;
+  padding: 55px 38px 0 38px;
+
+  @media (max-width: master.$sm) {
+    width: 100% !important;
+    margin: 0px;
+    height: calc(100%) !important;
+    border-radius: 0 !important;
+    padding: 47px 25px 0 25px;
+  }
+}
+.packetBuyDoneRoot {
+  width: 464px !important;
+  min-height: 373px !important;
+  max-height: 481px !important;
+  padding: 70px 40px !important;
+  border-radius: 16px !important;
+  height: auto !important;
+  @media (max-width: master.$xl) {
+    width: 386px !important;
+    min-height: 313px !important;
+    max-height: auto !important;
+    padding: 60px 27px !important;
+  }
+  @media (max-width: master.$sm) {
+    width: 100% !important;
+    min-height: 100% !important;
+    max-height: 100% !important;
+    border-radius: 0 !important;
+    padding: 130px 24px 24px 24px !important;
+  }
+}
+.errorValid {
+  font-size: 9px;
+  width: 100%;
+  margin-top: -19px;
+  color: red;
+  padding-right: 5px;
+  text-align: left;
+}
+.mt35 {
+  margin-top: 35px;
+}
+.policy {
+  text-decoration: none;
+  color: var(--buttonColorNormal);
+  @extend .fontFamB;
+}
+.table {
+  border-collapse: separate !important;
+  overflow: hidden;
+  border-radius: 8px;
+  border: solid 1px #dadae0;
+  margin-top: 16px;
+  @media (max-width: master.$xl) {
+    margin-top: 10px;
+  }
+  @media (max-width: master.$sm) {
+    margin-top: 12px;
+  }
+}
+.tableNoBorder {
+  border-collapse: separate;
+  overflow: hidden;
+  border-radius: 8px;
+  // margin-top: 42px;
+  @media (max-width: master.$sm) {
+    border-collapse: collapse;
+  }
+  & tr {
+    & > td {
+      padding: 10px 26px;
+      height: 44px;
+      @media (max-width: master.$xl) {
+        padding: 8px 26px;
+        height: 36px;
+      }
+      @media (max-width: master.$sm) {
+        width: auto;
+      }
+    }
+    & > td:nth-child(2n) {
+      text-align: left;
+      padding-left: 0px;
+      @extend .fontFamB;
+
+      @media (max-width: master.$xl) {
+        font-size: 12px;
+      }
+    }
+    & > td:nth-child(2n-1) {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding-right: 0px;
+      @media (max-width: master.$xl) {
+        font-size: 12px;
+      }
+      & > svg {
+        margin-left: 12px;
+        @media (max-width: master.$xl) {
+          font-size: 20px;
+        }
+      }
+    }
+    &:nth-child(3) {
+      @media (max-width: master.$sm) {
+        border-bottom: 1px solid #ebebef;
+      }
+      & > td {
+        padding-bottom: 20px;
+        height: 51px;
+        border-bottom: 1px solid #ebebef;
+        @media (max-width: master.$xl) {
+          padding-bottom: 16px;
+          height: 44px;
+        }
+        @media (max-width: master.$sm) {
+          border-bottom: none;
+        }
+      }
+    }
+    &:nth-child(4) {
+      & > td {
+        padding-top: 19px;
+        padding-bottom: 0;
+        height: 37px;
+        line-height: 18px;
+        @media (max-width: master.$xl) {
+          font-size: 12px;
+          padding-top: 15px;
+          line-height: 16px;
+          height: 31px;
+        }
+        &:nth-child(2) {
+          color: var(--buttonColorNormal);
+          @extend .fontFamB;
+          font-size: 13px;
+          @media (max-width: master.$xl) {
+            font-size: 12px;
+            padding-top: 15px;
+            line-height: 16px;
+            height: 31px;
+          }
+          & span {
+            font-size: 13px;
+            @media (max-width: master.$xl) {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+  & tr:nth-child(1) {
+    & > td {
+      padding-top: 0;
+      height: 34px;
+      @media (max-width: master.$xl) {
+        height: 28px;
+      }
+    }
+  }
+}
+.packetTypeTd {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.moonIcon {
+  border-radius: 50%;
+  background-color: rgba(66, 100, 251, 0.1);
+  width: 27px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+  border: 1px solid var(--buttonColorNormal);
+  & > svg {
+    width: 14px;
+    height: 14px;
+    color: var(--buttonColorNormal);
+  }
+}
+.factorTitle {
+  color: var(--buttonColorNormal);
+  margin-bottom: 0px;
+  margin-top: 13px;
+  font-weight: normal;
+  @extend .fontFamB;
+  font-size: 15px;
+  line-height: 21px;
+  @media (max-width: master.$xl) {
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 12px;
+  }
+  @media (max-width: master.$sm) {
+    margin-top: 9px;
+    font-size: 13;
+  }
+  &:before {
+    content: "";
+    margin-left: 10px;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: var(--buttonColorNormal);
+  }
+}
+
+.factorRoot {
+  border-radius: 16px !important;
+  width: 924px !important;
+  max-width: 924px !important;
+  height: auto !important;
+  min-height: 627px !important;
+  padding: 45px !important;
+  @media (max-width: master.$xl) {
+    width: 671px !important;
+    min-height: 485px !important;
+    padding: 33px !important;
+  }
+
+  @media (max-width: master.$sm) {
+    width: 100% !important;
+    margin: 0px !important;
+    height: calc(100%) !important;
+    border-radius: 0 !important;
+    padding: 0px !important;
+  }
+}
+.upgradeHeight {
+  min-height: 753px !important;
+  @media (max-width: master.$sm) {
+    min-height: 100% !important;
+  }
+}
+.dialog {
+  @media (max-width: master.$sm) {
+    align-items: flex-end;
+  }
+}
+
+.modalHead {
+  margin-top: 0px;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  margin-bottom: 40px;
+  padding: 0 35px;
+  &:after {
+    width: calc(100% + 70px);
+    height: 1px;
+    content: "";
+    background-color: rgba(12, 11, 49, 0.16);
+    position: absolute;
+    bottom: 0;
+    right: -35px;
+  }
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    & > img {
+      margin-left: 6px;
+      cursor: pointer;
+    }
+    & > p {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: master.$xl) {
+    height: 76px;
+    margin-bottom: 30px;
+    padding: 0 30px;
+    &:after {
+      width: calc(100% + 60px);
+      right: -30px;
+    }
+    & > div {
+      & > img {
+        width: 20px;
+      }
+    }
+  }
+  @media (max-width: master.$sm) {
+    height: 65px;
+    margin-bottom: 24px;
+    padding: 24px;
+    &:after {
+      width: calc(100%);
+      right: 0;
+    }
+    & > div {
+      & > img {
+        width: 20px;
+      }
+    }
+  }
+}
+.factorModalHead {
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modalIcon {
+  font-size: 60px;
+  color: #607d8b;
+  margin-bottom: 10px;
+  height: 76px !important;
+}
+.profileAvatarDemo {
+  & > img {
+    width: 40%;
+    height: unset;
+  }
+}
+.phoneInputLabel {
+  color: var(--textColorPrimary) cc;
+  font-size: 16px;
+  margin-bottom: 14px;
+  padding-right: 8px;
+  @extend .fontFamR;
+  &:after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    display: inline-block;
+    border-radius: 50%;
+    right: 4px;
+    top: -9px;
+    position: relative;
+    background-color: #f64d4d;
+  }
+}
+.modalTitle {
+  margin-bottom: 0px;
+}
+.factorModalTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  font-size: 16px;
+  color: var(--textColorPrimary);
+  @extend .fontFamB;
+  line-height: 22px;
+  margin-bottom: 19px;
+  @media (max-width: master.$xl) {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 13px;
+  }
+  & > img {
+    width: 17px;
+    margin-left: 13px;
+    color: var(--textColorPrimary);
+    @media (max-width: master.$xl) {
+      width: 16px;
+    }
+  }
+}
+.completeModalTitle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 38px;
+  & p {
+    @extend .fontFamB;
+    font-size: 18px;
+    color: var(--textColorPrimary);
+    margin-bottom: 0px;
+    margin-top: 2px;
+    margin-right: 9;
+  }
+}
+.tableContainer {
+  margin-top: 40px;
+  height: auto;
+  overflow: visible;
+  @media (max-width: master.$xl) {
+    margin-top: 34px;
+  }
+}
+.closeButton {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  color: var(--textColorPrimary);
+  cursor: pointer;
+  @media (max-width: master.$sm) {
+    top: 20px;
+    right: 20px;
+  }
+}
+.modalTitleDesc {
+  font-size: 16px;
+  color: var(--textColorPrimary);
+  margin-bottom: 81px;
+  margin-top: 0;
+}
+.completeModalTitleDesc {
+  font-size: 16px;
+  color: var(--textColorPrimary);
+  margin-top: 0px;
+  margin-right: 10;
+}
+.verifyModalTitleDesc {
+  margin-bottom: 11px;
+}
+.factorBuyPacketContainer {
+  padding: 0px !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  overflow-y: visible !important;
+  @media (max-width: master.$sm) {
+    // padding-top: 9px !important;
+    overflow: visible !important;
+    padding: 0 24px 68px 24px !important;
+    // padding:0 25px!important;
+  }
+}
+
+.BuyPacketContainer {
+  padding: 0;
+  margin-bottom: 111px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  // padding: 34px 35px 23px 35px;
+  @media (max-width: master.$xl) {
+    padding-top: 9px;
+  }
+  @media (max-width: master.$sm) {
+    padding: 0 24px;
+  }
+  & > div {
+    margin-bottom: 22px;
+  }
+}
+
+.border-radius8 {
+  border-radius: 8px !important;
+}
+.dialogBtn {
+  border-radius: 0 !important;
+}
+.submitBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.loadingBox {
+  margin: 250px auto 250px auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.modalContent {
+  padding: 15px 11px;
+  padding-bottom: 0;
+}
+.factorFooter {
+  height: 56px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  & > label {
+    & > span:nth-child(1) {
+      padding: 12px !important;
+    }
+    & > span:nth-child(2) {
+      margin-right: 4px;
+    }
+  }
+  @media (max-width: master.$xl) {
+    margin-top: 25px;
+    height: 40px !important;
+  }
+}
+
+.factorActionBtnContainer {
+  width: 294px !important;
+  @media (max-width: master.$xl) {
+    width: 208px !important;
+  }
+  @media (max-width: master.$sm) {
+    width: 1px !important;
+  }
+}
+.factorActionBtn {
+  @extend .btn_height58;
+  width: 294px !important;
+  height: 56px !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: #fff !important;
+  border-radius: 8px !important;
+  color: var(--buttonColorNormal) !important;
+  margin: 0px !important;
+  outline: none !important;
+  font-size: 14px !important;
+  border: 1px solid var(--buttonColorNormal) !important;
+  @extend .fontFamR;
+  transition: all 0.3s ease-in-out !important;
+  &:hover {
+    background-color: var(--buttonColorHover) !important;
+    color: #fff !important;
+  }
+  @media (max-width: master.$xl) {
+    width: 208px !important;
+    height: 40px !important;
+    font-size: 12px !important;
+    // bottom: -33px!important;
+    // left: 7px!important;
+  }
+  @media (max-width: master.$sm) {
+    position: absolute !important;
+    top: 17.5px !important;
+    background-color: #fff !important;
+    margin: 0px !important;
+    left: 24px !important;
+    width: 93px !important;
+    height: 30px !important;
+    border-radius: 15px !important;
+    padding: 10px !important;
+    // border: none!important;
+    // width: max-content!important;
+    color: var(--buttonColorNormal) !important;
+    &:hover {
+      background-color: #fff !important;
+      color: var(--buttonColorHover) !important;
+    }
+  }
+}
+.actionBtnContainer {
+  width: 78px !important;
+  @media (max-width: master.$xl) {
+    width: 66px !important;
+  }
+}
+.actionBtn {
+  @extend .btn_height30;
+  width: 78px !important;
+  height: 30px !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: #fff !important;
+  border-radius: 15px !important;
+  color: var(--buttonColorNormal) !important;
+  margin: 0px !important;
+  outline: none !important;
+  font-size: 13px !important;
+  border: 1px solid var(--buttonColorNormal) !important;
+  @extend .fontFamM;
+  transition: all 0.3s ease-in-out !important;
+  &:hover {
+    background-color: var(--buttonColorHover) !important;
+    color: #fff !important;
+  }
+  @media (max-width: master.$xl) {
+    // left: 27px !important;
+    // top: 26px !important;
+    width: 66px !important;
+    height: 26px !important;
+    font-size: 12px !important;
+    font-family: master.$regularFont;
+  }
+  @media (max-width: master.$sm) {
+    // top: 17.5px !important;
+    background-color: #fff !important;
+    margin: 0px !important;
+    // left: 24px !important;
+    // width: max-content!important;
+    color: var(--buttonColorHover) !important;
+    &:hover {
+      background-color: #fff !important;
+      color: var(--buttonColorHover) !important;
+    }
+  }
+}
+.actionBtnDisabled {
+  color: var(--textColorDisabled) !important;
+}
+.modalTitleBolder {
+  @extend .fontFamB;
+  font-size: 25px;
+}
+.policyContainer {
+  & p {
+    line-height: 19px;
+    font-size: 13px;
+    margin-right: 7px;
+  }
+  @media (max-width: master.$xl) {
+    padding-right: 11px;
+    bottom: -33px;
+
+    & > span {
+      padding: 0px;
+      padding-left: 15px;
+    }
+    & p {
+      font-size: 12px;
+      line-height: 16px;
+      margin-right: 0;
+    }
+    & img {
+      width: 20px;
+      height: 20;
+    }
+  }
+
+  @media (max-width: master.$sm) {
+    bottom: 30px;
+    position: unset;
+    margin-top: 24;
+  }
+}
+.resetBtn {
+  color: #1641ff;
+  font-size: 14px !important;
+  @extend .fontFamR;
+  background-color: transparent !important;
+}
+.callWithMeBtn {
+  background-color: transparent !important;
+  color: #536b88;
+  font-size: 14px !important;
+  @extend .fontFamR;
+  margin-top: 34;
+}
+.dialogContent {
+  padding: 8px 0px;
+
+  display: flex;
+  flex-direction: column;
+}
+.timer {
+  margin-left: 5px;
+  font-size: 16px;
+}
+.addImageContainer {
+  display: flex;
+  height: 101px;
+  width: 100%;
+  padding-right: 5px;
+  margin-bottom: 38px;
+  align-items: center;
+}
+.fieldLabel {
+  margin-bottom: 7px;
+  margin-right: 4px;
+}
+.addImageBtn {
+  width: 308px;
+  height: 48px;
+  border-radius: 8px;
+  border: solid 1px #ccd7dd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  @media (max-width: master.$sm) {
+    width: 166px;
+  }
+}
+
+.modalBody {
+  padding: 8px 0px;
+  @media (max-width: master.$sm) {
+    padding: 8px 0;
+  }
+}
+.fieldLabelRequired {
+  position: relative;
+  &:after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    display: inline-block;
+    border-radius: 50%;
+    right: -9px;
+    top: 0px;
+    background-color: #f64d4d;
+  }
+}
+
+.profileAvatarContainer {
+  width: 108px;
+
+  height: 108px;
+  border-radius: 50%;
+  border: 1px solid #92a4bb;
+  position: relative;
+  margin-left: 33px;
+  overflow: hidden;
+  &:hover {
+    & > div:last-child {
+      opacity: 1px;
+    }
+  }
+}
+.profileOverlay {
+  position: absolute;
+  opacity: 0px;
+  background-color: rgba(12, 11, 49, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.profileAvatar {
+  width: 100% !important;
+  height: 100% !important;
+  border: 3px solid #fff;
+  background-color: rgba(189, 200, 214, 0.45) !important;
+  cursor: pointer;
+}
+.doneIcon {
+  width: 80px;
+  height: 80px;
+  min-height: 80px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  @media (max-width: master.$xl) {
+    margin-top: 0px;
+    width: 67px;
+    height: 67px;
+    min-height: 67px;
+    margin-bottom: 20px;
+
+    & img {
+      width: 32px !important;
+      height: 32px !important;
+    }
+  }
+  @media (max-width: master.$sm) {
+    width: 75px;
+    height: 75px;
+    & img {
+      width: 50px !important;
+      height: 50px !important;
+    }
+  }
+}
+.successTop {
+  margin-top: 0px;
+}
+.errorTop {
+  margin-top: 0px;
+}
+.DoneContainer {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  flex-direction: column !important;
+  padding: 0 !important;
+  @media (max-width: master.$xl) {
+    height: 100% !important;
+  }
+  @media (max-width: master.$sm) {
+    padding: 0px !important;
+    height: calc(100vh - 60px) !important;
+    position: relative !important;
+  }
+}
+.doneText {
+  @extend .fontFamB;
+  font-size: 14px !important;
+  line-height: 21px !important;
+
+  @media (max-width: master.$xl) {
+    font-size: 13px !important;
+    line-height: 18px !important;
+  }
+  @media (max-width: master.$sm) {
+    font-size: 14;
+  }
+}
+.doneFooterText {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 19px;
+
+  & > div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & > img {
+      margin-left: 10;
+    }
+    & > p {
+      margin-bottom: 8px;
+      margin-top: 8;
+    }
+  }
+  & > div:nth-child(2) {
+    color: var(--buttonColorNormal);
+    @extend .fontFamB;
+  }
+}
+.actionBTN {
+  all: unset;
+  background-color: #f5f8fa;
+  border-radius: 8px;
+  color: #aab8c1;
+  @extend .fontFamB;
+  font-size: 13px;
+  text-align: center;
+  margin: 0px;
+  pointer-events: none;
+  position: absolute;
+  width: 384px;
+  height: 52px;
+  bottom: 40px;
+  right: unset;
+  @media (max-width: master.$xl) {
+    width: 332px;
+    height: 48px;
+    right: unset;
+    bottom: 27px;
+  }
+  @media (max-width: master.$sm) {
+    right: 0;
+    width: calc(100vw - 48px);
+    height: 48px;
+    bottom: 4px;
+  }
+}
+.actionActiveBTN {
+  cursor: pointer;
+  pointer-events: unset;
+  background-color: var(--buttonColorNormal);
+  color: white;
+  &:hover {
+    background-color: var(--buttonColorHover);
+  }
+  // boxShadow: 0 6px 19px 0 rgba(9px; 0px; 255px; 0.23);
+}
+.bankWaiting {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: -25px;
+  right: -30px;
+  width: calc(100% + 60px);
+  height: calc(100% + 117px);
+  z-index: 999 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  & p {
+    color: #fff;
+    font-size: 18px;
+    @extend .fontFamB;
+    margin-bottom: 40;
+  }
+  @media (max-width: master.$sm) {
+    top: 0px;
+    right: 0px;
+    width: calc(100%);
+    height: calc(100%);
+  }
+}
+.upgradeNote {
+  font-size: 13px !important;
+  width: 100% !important;
+  margin-top: -6px !important;
+  padding: 0 35px;
+  @media (max-width: master.$xl) {
+    font-size: 12px !important;
+    margin-top: 0 !important;
+    padding: 0 30px;
+  }
+  @media (max-width: master.$sm) {
+    font-size: 13px !important;
+    margin-top: 0 !important;
+    padding: 0 24px;
+  }
+}
+.loadingProgress {
+  position: absolute !important;
+  top: 89px !important;
+  width: 100% !important;
+  right: 0 !important;
+  height: 2px !important;
+  @media (max-width: master.$xl) {
+    top: 74px !important;
+  }
+  @media (max-width: master.$sm) {
+    top: 63px !important;
+  }
+  & div {
+    background-color: var(--buttonColorNormal) !important;
+  }
+}
+.loadingProgressFactor {
+  position: absolute !important;
+  top: -30px !important;
+  width: calc(100% + 60px) !important;
+  right: -30px !important;
+  height: 2px;
+  @media (max-width: master.$xl) {
+    top: -17px !important;
+  }
+  @media (max-width: master.$sm) {
+    top: 64px !important;
+  }
+  & div {
+    background-color: var(--buttonColorNormal) !important;
+  }
+}
+.overflowHidden {
+  overflow: hidden !important;
+  overflow-y: hidden !important;
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Mobile_Devices_Wifi" width="68" height="68" viewBox="0 0 68 68">
+    <defs>
+        <style>
+            .cls-3{fill:none;stroke:#3f53d9;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px}
+        </style>
+    </defs>
+    <path id="Path_17598" fill="none" d="M0 0h68v68H0z"/>
+    <path id="Path_17599" fill="#0c0b31" stroke="#3f53d9" stroke-linecap="round" stroke-linejoin="round" stroke-width="4px" d="M9.88 18.5h6.347" transform="translate(18.113 33.917)"/>
+    <path id="Path_17600" d="M14 5a5.665 5.665 0 0 1 5.667 5.667" class="cls-3" transform="translate(25.667 9.167)"/>
+    <path id="Path_17601" fill="none" stroke="#0c0b31" stroke-linecap="round" stroke-linejoin="round" stroke-width="4px" d="M34.333 22v22.667a5.665 5.665 0 0 1-5.667 5.667h-17A5.665 5.665 0 0 1 6 44.667v-34A5.665 5.665 0 0 1 11.667 5h8.5" transform="translate(11 9.167)"/>
+    <path id="Path_17602" d="M15 2a11.334 11.334 0 0 1 11.333 11.333" class="cls-3" transform="translate(27.5 3.667)"/>
+</svg>

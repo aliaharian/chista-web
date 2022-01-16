@@ -1,0 +1,229 @@
+@use "../../../../components/Kit/Style/kits.module.scss" as master;
+
+.addFromContactsDetails {
+    display: flex;
+    margin: 50px auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 100px);
+    @media (max-width: master.$xl) {
+        margin: 40px auto;
+    }
+    @media (max-width: master.$sm) {
+        margin: 30px auto;
+        width: calc(100% - 80px);
+    }
+    & > p {
+        color: rgba(12, 11, 49, 0.8);
+        font-size: 13px;
+        margin: 0px;
+    }
+    & > div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        & > p {
+            font-size: 13px;
+            color: var(--buttonColorNormal);
+            margin: 0 0 0 11px;
+            cursor: pointer;
+        }
+        & > div {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            padding: 9px;
+            background-color: #f5f5f7;
+            cursor: pointer;
+            & > img {
+                width: 22px;
+            }
+        }
+    }
+}
+.addFromContactSearchContainer {
+    width: calc(100% - 70px);
+    background-color: #f5f5f7;
+    border-radius: 24px;
+    display: flex;
+    margin: 50px 35px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 9px;
+    @media (max-width: master.$sm) {
+        margin: 30px 24px;
+        width: calc(100% - 48px);
+    }
+    & > input {
+        margin-right: 8px;
+        border: none;
+        background-color: #f5f5f7;
+        padding: 11px 0px;
+        font-size: 13px;
+        @extend .fontFamR;
+        width: calc(100% - 17px - 18px - 18px);
+        border-radius: 24px;
+        &:focus {
+            outline: none;
+        }
+    }
+    & > .deleteSearchText {
+        width: 18px;
+    }
+}
+
+.resultForSearchInActivitiesContainer {
+    width: 100%;
+
+    & > .allResultForSearch {
+        margin: 50px 0 20px 0px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    & > .numOfResultForSearch {
+        font-size: 13px;
+        line-height: 18px;
+        color: rgba(12, 11, 49, 0.8);
+        margin: 0px;
+    }
+}
+
+.activityWrapper {
+    position: relative;
+    // padding: 0px 10px 0 44px;
+    @media (max-width: master.$sm) {
+        padding: 0px 24px;
+        margin-bottom: 90px;
+    }
+}
+.mobileAddClassHeader {
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+    margin-bottom: 0px;
+    @media (max-width: master.$sm) {
+        display: flex;
+        height: 50px;
+        margin-bottom: 24px;
+        position: relative;
+
+        &:after {
+            content: "";
+            width: 100vw;
+            height: 1px;
+            background-color: var(--textColorBorder);
+            bottom: 0px;
+            position: absolute;
+            left: 0px;
+        }
+    }
+}
+.breadCrumb {
+    // width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 27px;
+    margin-top: 5px;
+    @media (max-width: master.$xl) {
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    & > p {
+        @extend .fontFamB;
+        color: var(--textColorPrimary);
+        margin: 0px;
+    }
+    & > svg {
+        margin-left: 7px;
+    }
+}
+.classListContainer {
+    width: 1095px;
+    max-width: 1095px;
+    min-width: 1095px;
+    margin: 0 -12px;
+    justify-content: flex-start;
+    @media (max-width: 1440px) {
+        margin: 0 auto;
+        width: 730px;
+        max-width: 730px;
+        min-width: 730px;
+    }
+    @media (max-width: 1039px) {
+        width: 365px;
+        max-width: 365px;
+        min-width: 365px;
+    }
+}
+.activityItemContainer {
+    margin-top: 40px;
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 362px 362px 362px;
+    row-gap: 25px;
+    column-gap: 25px;
+    @media (max-width: master.$xl) {
+        margin-top: 30px;
+
+        grid-template-columns: 287px 287px 287px;
+        row-gap: 19px;
+        column-gap: 19px;
+    }
+    @media (max-width: master.$sm) {
+        grid-template-columns: 100%;
+        row-gap: 25px;
+    }
+}
+.classListContainer {
+    width: 1095px;
+    max-width: 1095px;
+    min-width: 1095px;
+    margin: 0 -12px;
+    justify-content: flex-start;
+    @media (max-width: 1440px) {
+        margin: 0 auto;
+        width: 730px;
+        max-width: 730px;
+        min-width: 730px;
+    }
+    @media (max-width: 1039px) {
+        width: 365px;
+        max-width: 365px;
+        min-width: 365px;
+    }
+}
+
+.addActivityBtnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 135px;
+    margin:30px auto 0;
+    @media (max-width: master.$xl) {
+        width: 130px;
+        height: 40px;
+    }
+    @media (max-width: master.$sm) {
+        width: 120px;
+    }
+    & > button {
+        @extend .btn_height48_A;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media (max-width: master.$xl) {
+            height: 40px !important;
+        }
+        &:hover {
+            background-color: var(--buttonColorHover) !important;
+            border: 1px solid var(--buttonColorHover) !important;
+            color: #fff !important;
+        }
+    }
+}

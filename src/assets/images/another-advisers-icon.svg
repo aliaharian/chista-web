@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Headphones_Customer_support" width="20" height="20" data-name="Headphones, Customer, support" viewBox="0 0 20 20">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#808895;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}
+        </style>
+    </defs>
+    <g id="Group_969" data-name="Group 969" transform="translate(2.5 2.5)">
+        <path id="Path_11837" d="M18.667 15.833h-.833A.834.834 0 0 1 17 15v-4.167a.834.834 0 0 1 .833-.833h.833a1.666 1.666 0 0 1 1.667 1.667v2.5a1.666 1.666 0 0 1-1.666 1.666z" class="cls-1" data-name="Path 11837" transform="translate(-5.333 -4.167)"/>
+        <path id="Path_11838" d="M5.5 15.833h-.833A1.666 1.666 0 0 1 3 14.167v-2.5A1.666 1.666 0 0 1 4.667 10H5.5a.834.834 0 0 1 .833.833V15a.834.834 0 0 1-.833.833z" class="cls-1" data-name="Path 11838" transform="translate(-3 -4.167)"/>
+        <path id="Path_11839" d="M16.333 8.833v-.416A5.417 5.417 0 0 0 10.917 3 5.417 5.417 0 0 0 5.5 8.417v.417" class="cls-1" data-name="Path 11839" transform="translate(-3.417 -3)"/>
+        <path id="Path_11840" d="M12.208 20.833h-1.041a1.042 1.042 0 0 1-1.042-1.042 1.042 1.042 0 0 1 1.042-1.042h1.042a1.042 1.042 0 0 1 1.042 1.042 1.042 1.042 0 0 1-1.043 1.042z" class="cls-1" data-name="Path 11840" transform="translate(-4.188 -5.625)"/>
+        <path id="Path_11841" d="M13.875 19.5h1.771a1.666 1.666 0 0 0 1.667-1.667V17" class="cls-1" data-name="Path 11841" transform="translate(-4.813 -5.333)"/>
+    </g>
+    <path id="Path_11842" fill="none" d="M0 0h20v20H0z" data-name="Path 11842"/>
+</svg>

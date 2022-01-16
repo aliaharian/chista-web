@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="107" height="103" viewBox="0 0 107 103">
+    <defs>
+        <filter id="Path_13688" width="82.373" height="76.429" x="13.081" y="15.518" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-color="#ff527a" flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            .cls-3{fill:none;stroke:#ff527a;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px}
+        </style>
+    </defs>
+    <g id="Group_9262" transform="translate(.514)">
+        <rect id="Rectangle_1288" width="107" height="103" fill="rgba(255,82,122,0.05)" rx="12" transform="translate(-.514)"/>
+        <g id="Warning.1" transform="translate(17.628 14.604)">
+            <path id="Path_13685" fill="none" d="M0 0h72.254v72.254H0z"/>
+            <path id="Path_13686" d="M12 20.64V9.38" class="cls-3" transform="translate(24.127 18.859)"/>
+            <path id="Path_13687" d="M12.5 16.125a.753.753 0 1 0 .756.753.748.748 0 0 0-.756-.753" class="cls-3" transform="translate(23.624 32.42)"/>
+            <g filter="url(#Path_13688)" transform="translate(-18.14 -14.6)">
+                <path id="Path_13688-2" d="M38.214 6.508l23.058 40.354a7.037 7.037 0 0 1-6.109 10.528H9.047a7.035 7.035 0 0 1-6.108-10.528L26 6.508a7.033 7.033 0 0 1 12.217 0z" class="cls-3" transform="translate(22.16 20.56)"/>
+            </g>
+        </g>
+    </g>
+</svg>

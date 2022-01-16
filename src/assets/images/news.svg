@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="News" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#2a2f33;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}
+        </style>
+    </defs>
+    <g id="Group_475" data-name="Group 475" transform="translate(3 4)">
+        <path id="Path_5908" d="M19 21a2 2 0 0 0 2-2v-6a1 1 0 0 0-1-1h-3v7a2 2 0 0 0 2 2z" class="cls-1" data-name="Path 5908" transform="translate(-3 -4)"/>
+        <path id="Path_5909" d="M7 8h6" class="cls-1" data-name="Path 5909" transform="translate(-3 -4)"/>
+        <path id="Path_5910" d="M7 11.87h6" class="cls-1" data-name="Path 5910" transform="translate(-3 -4)"/>
+        <path id="Path_5911" d="M7 16.06h3" class="cls-1" data-name="Path 5911" transform="translate(-3 -4)"/>
+        <path id="Path_5912" d="M17 12V5a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v14a2 2 0 0 0 2 2h14" class="cls-1" data-name="Path 5912" transform="translate(-3 -4)"/>
+    </g>
+    <path id="Path_5913" fill="none" d="M0 0h24v24H0z" data-name="Path 5913"/>
+</svg>

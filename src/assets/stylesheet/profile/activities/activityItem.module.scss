@@ -1,0 +1,194 @@
+@use "../../../../components/Kit/Style/kits.module.scss" as master;
+.activityItem {
+    width: 100%;
+}
+.activityItemChild {
+    height: 160px;
+    border: 1px solid var(--textColorBorder);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 30px 20px 30px;
+    background-color: white;
+    &:hover{
+        border: 1px solid var(--buttonColorNormal);
+
+    }
+    @media (max-width: master.$xl) {
+        height: 128px;
+        padding: 20px 20px 15px;
+    }
+    @media (max-width: master.$sm) {
+        height: 142px;
+        padding: 22px 24px 15px;
+    }
+}
+.activityTitleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    &:after {
+        width: 30px;
+        height: 1px;
+        background-color: var(--textColorBorder);
+        position: absolute;
+        bottom: 0px;
+        left: 35px;
+    }
+    & > div {
+        &:nth-child(1) {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            & > div {
+                &:nth-child(1) {
+                    margin-left: 11px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    &>img{
+                        @media (max-width: master.$xl) {
+                            height: 27px;
+                        }
+                        @media (max-width: master.$sm) {
+                            height: 28px;
+                        }
+                    }
+                }
+                &:nth-child(2) {
+                    & > p {
+                        font-size: 13px;
+                        @media (max-width: master.$xl) {
+                            font-size: 12px;
+                            line-height:16px;
+                        }
+                        @media (max-width: master.$sm) {
+                            font-size: 13px;
+                            line-height:18px;
+                        }
+                        &:nth-child(1) {
+                            @extend .fontFamB;
+                            max-width: 166px;
+                            @media (max-width: master.$xl) {
+                                margin-bottom:4px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &:nth-child(2) {
+            & > button {
+                width: 73px;
+                height: 30px;
+                @media (max-width: master.$xl) {
+                    width: 62px;
+                    height: 28px;
+                }
+                @media (max-width: master.$sm) {
+                    width: 73px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
+.viewActivityBtnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 77px;
+    margin-left: 0px;
+    @media (max-width: master.$xl) {
+        width: 62px;
+        height: 28px;
+    }
+    @media (max-width: master.$sm) {
+        width: 73px;
+        height: 30px;
+    }
+    &>button {
+        @extend .btn_height30;
+        &:hover {
+            background-color: var(--buttonColorNormal) !important;
+            border: 1px solid var(--buttonColorNormal) !important;
+            color: #fff !important;
+        }
+    }
+}
+// .statusWrapper {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 40px;
+//     width: 110px;
+//     margin-left: 0px;
+// }
+.disabledBtn {
+    pointer-events: none;
+    color: var(--textColorDisabled);
+    border: 1px solid var(--textColorBorder);
+}
+.activityProgress {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    margin-top: 21px;
+    @media (max-width: master.$xl) {
+        margin-top: 20px;
+    }
+    @media (max-width: master.$sm) {
+        margin-top: 24px;
+    }
+}
+.activityInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 19px;
+    @media (max-width: master.$xl) {
+        margin-top: 15px;
+    }
+    & p {
+        font-size: 13px;
+        color: var(--textColorSecondary);
+        @media (max-width: master.$xl) {
+            font-size: 12px;
+            line-height:17px;
+        }
+        @media (max-width: master.$sm) {
+            font-size: 13px;
+            line-height:18px;
+        }
+    }
+    & > div {
+        &:nth-child(1) {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            & img {
+                margin-left: 11px;
+                @media (max-width: master.$xl) {
+                    height:18px;
+                }
+            }
+            
+        }
+    }
+}
+.doneContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    & img {
+        margin-left: 5px;
+    }
+}

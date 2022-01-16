@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Done_Check.3" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#34c278;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}
+        </style>
+    </defs>
+    <path id="Path_4886" fill="none" d="M0 0h24v24H0z"/>
+    <path id="Path_4887" d="M8.712 12.566l2.188 2.193 4.787-4.788" class="cls-2"/>
+    <path id="Path_4888" d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2z" class="cls-2"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="board-basics" transform="translate(2.5 2)">
+    <path id="Path_29304" data-name="Path 29304" d="M20.339,1.568V35.382m-4.891-9.071-3.778,8.8m12.759-8.8,3.778,8.8" transform="translate(-2.839 -0.712)" fill="none" stroke="#050038" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill-rule="evenodd"/>
+    <path id="Path_29305" data-name="Path 29305" d="M1,4.5H34.88V27.131H1Z" transform="translate(-0.698 -1.297)" fill="#fff" stroke="#050038" stroke-width="2" fill-rule="evenodd"/>
+    <path id="Path_29306" data-name="Path 29306" d="M12,14.1h4v8.805H12Zm6.4-3.2h4V22.908h-4Zm6.4-2.4h4V22.908h-4Z" transform="translate(-2.905 -2.103)" fill="#ff6575" fill-rule="evenodd"/>
+    <path id="Path_29307" data-name="Path 29307" d="M-2.5-2h40V38h-40Z" transform="translate(0)" fill="none" fill-rule="evenodd"/>
+  </g>
+</svg>

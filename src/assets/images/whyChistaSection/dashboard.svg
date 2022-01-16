@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Dashboard.3" width="68" height="68" viewBox="0 0 68 68">
+    <defs>
+        <style>
+            .cls-2,.cls-3,.cls-4{fill:none}.cls-2{stroke:#0c0b31}.cls-2,.cls-3,.cls-4{stroke-linecap:round;stroke-linejoin:round;stroke-width:4px}.cls-3{stroke:#3f53d9}.cls-4{stroke:#0c0b31}
+        </style>
+    </defs>
+    <g id="Group_394" transform="translate(8.518 14.122)">
+        <path id="Path_4804" fill="#bdc9ff" d="M19.695 12.663a5.679 5.679 0 1 1-8.031 0 5.679 5.679 0 0 1 8.031 0" transform="translate(9.803 6.038)"/>
+        <path id="Path_4796" d="M12 5v5.679" class="cls-2" transform="translate(13.482 -4.999)"/>
+        <path id="Path_4797" d="M19 14h5.679" class="cls-2" transform="translate(26.284 11.557)"/>
+        <path id="Path_4798" d="M3 14h5.679" class="cls-2" transform="translate(-3 11.557)"/>
+        <path id="Path_4799" d="M19.695 12.663a5.679 5.679 0 1 1-8.031 0 5.679 5.679 0 0 1 8.031 0" class="cls-3" transform="translate(9.803 6.038)"/>
+        <path id="Path_4800" d="M12 5v5.679" class="cls-4" transform="translate(13.482 -4.999)"/>
+        <path id="Path_4801" d="M24.679 14H19" class="cls-4" transform="translate(26.284 11.557)"/>
+        <path id="Path_4802" d="M8.679 14H3" class="cls-4" transform="translate(-3 11.557)"/>
+        <path id="Path_4803" d="M19.089 9.59l-5.679 5.679" class="cls-3" transform="translate(16.053 3.444)"/>
+        <path id="Path_4805" d="M46.371 44.754H10.583a5.573 5.573 0 0 1-5.045-3.078 25.481 25.481 0 1 1 45.9-.037 5.6 5.6 0 0 1-5.067 3.115z" class="cls-4" transform="translate(-2.998 -5)"/>
+    </g>
+    <path id="Path_4806" fill="none" d="M0 0h68v68H0z"/>
+</svg>

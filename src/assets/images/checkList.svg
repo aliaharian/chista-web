@@ -1,0 +1,12 @@
+<svg id="Delivery_Check_List" data-name="Delivery, Check, List" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_14003" data-name="Group 14003">
+    <path id="Path_20430" data-name="Path 20430" d="M8,4,9.3,2.375A1,1,0,0,1,10.081,2H13.92a1,1,0,0,1,.781.375L16,4h0V5a1,1,0,0,1-1,1H9A1,1,0,0,1,8,5V4Z" fill="none" stroke="#0c0b31" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"/>
+    <path id="Path_20431" data-name="Path 20431" d="M9.667,9.333,8,11,7,10" fill="none" stroke="#0c0b31" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"/>
+    <path id="Path_20432" data-name="Path 20432" d="M13,18h3" fill="none" stroke="#0c0b31" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"/>
+    <path id="Path_20433" data-name="Path 20433" d="M13,10h3" fill="none" stroke="#0c0b31" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"/>
+    <path id="Path_20434" data-name="Path 20434" d="M9.667,13.333,8,15,7,14" fill="none" stroke="#0c0b31" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"/>
+    <path id="Path_20435" data-name="Path 20435" d="M13,14h3" fill="none" stroke="#0c0b31" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"/>
+    <path id="Path_20436" data-name="Path 20436" d="M16,4h2a2,2,0,0,1,2,2V20a2,2,0,0,1-2,2H6a2,2,0,0,1-2-2V6A2,2,0,0,1,6,4H8" fill="none" stroke="#0c0b31" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75"/>
+  </g>
+  <path id="Path_20437" data-name="Path 20437" d="M0,0H24V24H0Z" fill="none"/>
+</svg>

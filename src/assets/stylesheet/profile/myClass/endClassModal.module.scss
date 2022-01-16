@@ -1,0 +1,122 @@
+@use "../../../../components/Kit/Style/kits.module.scss" as master;
+.modalWrapper {
+    border-radius: 16px !important;
+    width: 464px !important;
+    height: 495px !important;
+    padding-left: 35px !important;
+    padding-right: 35px !important;
+    @media (max-width: master.$xl) {
+        width: 386px !important;
+        height: 421px !important;
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+    @media (max-width: master.$sm) {
+        height: 100% !important;
+        max-height: 100% !important;
+        border-radius: 0 !important;
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+}
+.resNone {
+    @media (max-width: master.$sm) {
+        display: none;
+    }
+}
+.modalScrollPaper {
+    @media (max-width: master.$sm) {
+        align-items: flex-end;
+    }
+}
+
+.warningImageWrapper {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff657529;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    & img {
+        width: 58px;
+    }
+    @media (max-width: master.$sm) {
+        margin-top: 67px;
+        margin-bottom: 26px;
+        width: 75px;
+        height: 75px;
+
+        & img {
+            width: 40px;
+        }
+    }
+}
+.dialogContent {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.warningText {
+    color: var(--textColorError);
+    font-size: 16px;
+    @extend .fontFamB;
+    margin: 0px;
+    margin-bottom: 6px;
+    @media (max-width: master.$sm) {
+        font-size: 14px;
+    }
+}
+.warningSubtext {
+    color: var(--textColorPrimary);
+    font-size: 14px;
+    @extend .fontFamR;
+    margin: 0px;
+    @media (max-width: master.$sm) {
+        font-size: 13px;
+    }
+}
+.deleteActionBtnContainer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 73px;
+    & > div {
+        cursor: pointer;
+        &>button{
+            @extend .btn_height48_B;
+            @extend .fontFamB;
+            font-size: 13px;
+        }
+    }
+
+    & > div:first-child {
+        width: 260px;
+        margin-left: 8px;
+        & > button {
+            background-color: var(--buttonColorNormal) !important;
+            border: none !important;
+            color: #fff !important;
+            &:hover {
+                background-color: var(--buttonColorHover) !important;
+            }
+        }
+    }
+    & > div:last-child {
+        width: 116px;
+        & > button {
+            background-color: #fff !important;
+            border: 1px solid + var(--buttonColorNormal) !important;
+            color: var(--buttonColorNormal) !important;
+            &:hover {
+                border: 1px solid var(--buttonColorHover) !important;
+                color: var(--buttonColorHover) !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Privacy" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#2a2f33;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}
+        </style>
+    </defs>
+    <path id="Path_6128" fill="none" fill-rule="evenodd" stroke="#2a2f33" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5px" d="M13 3H3a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"/>
+    <path id="Path_6129" d="M18 18l1.991 2.982h.018L22 18V5a2 2 0 0 0-2-2 2 2 0 0 0-2 2v13z" class="cls-2"/>
+    <path id="Path_6130" d="M18 7h4" class="cls-2"/>
+    <path id="Path_6131" fill="none" d="M0 0h24v24H0z"/>
+</svg>

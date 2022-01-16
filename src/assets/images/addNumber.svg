@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="User_Profile_Square" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#2a2f33;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}
+        </style>
+    </defs>
+    <g id="Group_1013" transform="translate(3 3)">
+        <path id="Path_12229" d="M17.229 18.332l-.318-.8a2.915 2.915 0 0 0-.73-1.064l-.058-.054a2.721 2.721 0 0 0-1.849-.726h-4.55a2.727 2.727 0 0 0-1.85.725l-.058.054a2.94 2.94 0 0 0-.73 1.064l-.316.8" class="cls-1" transform="translate(-3 -3)"/>
+        <path id="Path_12230" d="M14.246 7.93a3.176 3.176 0 1 1-4.492 0 3.177 3.177 0 0 1 4.492 0" class="cls-1" transform="translate(-3 -3)"/>
+        <path id="Path_12231" d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2z" class="cls-1" transform="translate(-3 -3)"/>
+    </g>
+    <path id="Path_12232" fill="none" d="M0 0h24v24H0z"/>
+</svg>

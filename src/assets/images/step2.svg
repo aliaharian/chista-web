@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51">
+    <defs>
+        <style>
+            .prefix__cls-4{fill:none}.prefix__cls-3{stroke:none}
+        </style>
+    </defs>
+    <g id="prefix__Group_9727" fill="none" stroke-width="3px" data-name="Group 9727" transform="translate(.129)">
+        <g id="prefix__Rectangle_1467" stroke="rgba(189,200,214,0.2)" data-name="Rectangle 1467" transform="translate(-.129)">
+            <rect width="51" height="51" class="prefix__cls-3" rx="18"/>
+            <rect width="48" height="48" x="1.5" y="1.5" class="prefix__cls-4" rx="16.5"/>
+        </g>
+        <g id="prefix__Rectangle_1468" stroke="#1641ff" stroke-dasharray="100 380" stroke-linecap="round" data-name="Rectangle 1468" transform="rotate(90 25.436 25.436)">
+            <rect width="51" height="51" class="prefix__cls-3" rx="18"/>
+            <rect width="48" height="48" x="1.5" y="1.5" class="prefix__cls-4" rx="16.5"/>
+        </g>
+    </g>
+</svg>

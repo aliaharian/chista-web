@@ -1,0 +1,718 @@
+@use "../../../../components/Kit/Style/kits.module.scss" as master;
+.detailClassWrapper {
+    max-width: 100%;
+    margin: 0px;
+    @media (max-width: master.$xl) {
+        padding: 24px 0 48px;
+    }
+    @media (max-width: master.$sm) {
+        padding: 24px 0px;
+    }
+}
+.classHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 16px;
+}
+.imageWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px;
+    border-left: 1px solid #e7ecf0;
+    & label {
+        cursor: pointer;
+    }
+    @media (max-width: master.$sm) {
+        border: none;
+    }
+}
+.classImageWrapper {
+    flex-direction: row;
+    border: none;
+    justify-content: flex-start;
+    padding: 0px;
+}
+.backArrow {
+    cursor: pointer;
+    margin-left: 15px;
+    @media (max-width: master.$xl) {
+        font-size: 19px !important;
+    }
+}
+.imageUploaded {
+    position: relative;
+    &:hover {
+        & > div {
+            display: flex;
+        }
+    }
+}
+.classAvatar {
+    width: 56px !important;
+    height: 56px !important;
+    font-size: 16px !important;
+    border-radius: 50% !important;
+    cursor: pointer !important;
+    @media (max-width: master.$xl) {
+        width: 48px !important;
+        height: 48px !important;
+    }
+    @media (max-width: master.$sm) {
+        width: 48px !important;
+        height: 48px !important;
+    }
+}
+.borderNone {
+    border: none !important;
+}
+.cursorAuto {
+    cursor: auto !important;
+}
+.classAvatarBorder {
+    border-radius: 100px;
+    padding: 0px;
+    position: relative;
+}
+.deleteIcon {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    justify-content: center;
+    align-items: center;
+    background-color: var(--textColorSecondary);
+    border-radius: 300px;
+    left: 0px;
+    bottom: 0px;
+    margin: auto;
+    color: white;
+    display: none;
+    @media (max-width: master.$sm) {
+        display: flex;
+    }
+}
+.imageBadge {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #e6e5ea;
+    border: 1px solid #fff;
+    right: -2px;
+    bottom: -2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & > img {
+        width: 20px;
+    }
+}
+.image {
+    width: 56px;
+    height: 56px;
+    background-color: var(--textColorFivePercent);
+    border-radius: 300px;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid var(--textColorBorder);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    @media (max-width: master.$xl) {
+        width: 48px;
+        height: 48px;
+    }
+    @media (max-width: master.$sm) {
+        width: 40px;
+        height: 40px;
+    }
+    & img {
+        color: #657686;
+        width: 24px;
+        @media (max-width: master.$xl) {
+            width: 18px;
+        }
+    }
+}
+.classTitle {
+    margin-right: 15px;
+    @media (max-width: master.$sm) {
+        margin-right: 11px;
+    }
+    & p:first-child {
+        @extend .fontFamM;
+        font-size: 13px;
+        margin-top: 0px;
+        margin-bottom: 9px;
+        line-height: 18px;
+        color: var(--textColorPrimary);
+        @media (max-width: master.$xl) and (min-width: master.$sm) {
+            font-size: 12px;
+            line-height: 16px;
+            margin-bottom: 8px;
+        }
+        @media (max-width: master.$sm) {
+            margin-bottom: 5px;
+        }
+    }
+    & span {
+        font-size: 13px;
+        line-height: 18px;
+        color: var(--textColorSecondary);
+        @media (max-width: master.$xl) and (min-width: master.$sm) {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+    & span:last-child {
+        margin-right: 5px;
+    }
+}
+.actionWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.join {
+    all: unset;
+    border-radius: 300px;
+    cursor: pointer;
+    margin-left: 18px;
+    background-color: var(--buttonColorNormal);
+    color: white;
+    height: 40px;
+    width: 100px;
+    box-sizing: border-box;
+    padding: 0 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    & svg {
+        margin-left: 3px;
+    }
+    & span {
+        font-size: 13px;
+        @extend .fontFamM;
+    }
+    &:hover {
+        background-color: #3748bb;
+    }
+}
+.disabledJoin {
+    border: 1px solid var(--textColorBorder) !important;
+    background-color: #fff !important;
+    color: var(--textColorDisabled) !important;
+    pointer-events: none;
+    cursor: auto !important;
+}
+.loginClassIcon {
+    font-size: 24px;
+}
+.share {
+    all: unset;
+    background-color: #fff;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-left: 11px;
+    cursor: pointer;
+}
+.enterClassButtonWrapper {
+    width: 88px;
+    margin-left: 15px;
+    @media (max-width: master.$xl) {
+        width: 80px;
+        margin-left: 20px;
+    }
+    @media (max-width: master.$sm) {
+        width: 70px;
+        margin-left: 15px;
+    }
+    & > button {
+        background-color: var(--buttonColorNormal);
+        color: #fff;
+        @extend .btn_height40;
+        border-radius: 20px;
+        @extend .fontFamR;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media (max-width: master.$xl) {
+            height: 35px !important;
+        }
+        @media (max-width: master.$sm) {
+            height: 30px !important;
+        }
+        & > svg {
+            margin-left: 5.5px;
+            font-size: 20px;
+        }
+        & > span {
+            font-size: 13px;
+            @media (max-width: master.$xl) {
+                font-size: 12px;
+            }
+        }
+    }
+}
+.stepContainer{
+    padding:0 35px;
+    @media (max-width: master.$xl) {
+        padding: 0 30px;
+    }
+    @media (max-width: master.$sm) {
+        padding: 0 24px;
+    }
+}
+.shareModalHeaderWrapper {
+    height: 90px;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 35px;
+    @media (max-width: master.$xl) {
+        height: 75px;
+        min-height: 75px;
+        padding: 0 30px;
+    }
+    @media (max-width: master.$sm) {
+        height: 65px;
+        min-height: 65px;
+        padding: 0 24px;
+    }
+}
+.shareModalTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    width: 100%;
+    height: 30px;
+
+    & > div:nth-child(1) {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    & p {
+        margin: 0px;
+        @extend .fontFamR;
+        font-size: 14px;
+        color: var(--textColorPrimary);
+        @media (max-width: master.$xl) and (min-width: master.$sm) {
+            font-size: 12px;
+        }
+    }
+    & img {
+        cursor: pointer;
+    }
+    & svg {
+        font-size: 18px;
+        color: var(--textColorPrimary);
+        cursor: pointer;
+        margin-left: 11px;
+    }
+}
+.shareContactContent {
+    padding: 35px 35px 0px !important;
+    @media (max-width: master.$xl) {
+        padding: 35px 30px 0px !important;
+    }
+    @media (max-width: master.$sm) {
+        padding: 35px 24px 0px !important;
+    }
+    & p {
+        @extend .fontFamR;
+        margin: 0 0 14px 0px;
+        font-size: 14px;
+        color: var(--textColorPrimary);
+        @media (max-width: master.$xl) and (min-width: master.$sm) {
+            font-size: 12px;
+        }
+    }
+}
+.shareInput {
+    width: 100%;
+    height: 56px;
+    position: relative;
+    border-radius: 8px;
+    @media (max-width: master.$sm) {
+        height: 48px;
+    }
+    & input {
+        border: 1px solid var(--textColorBorder);
+        width: 100%;
+        text-align: left;
+        direction: ltr;
+        padding: 0 20px;
+        border-radius: 8px;
+        padding-right: 50px;
+        height: 56px;
+        resize: none;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        @extend .fontFamR;
+        font-size: 13px;
+        @media (max-width: master.$sm) {
+            height: 48px;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    & img {
+        position: absolute;
+        right: 16px;
+        cursor: pointer;
+        top: 0px;
+        bottom: 0px;
+        margin: auto;
+    }
+}
+.shareSocial {
+    margin-top: 8px;
+    display: flex;
+    justify-content: flex-end !important;
+    align-items: center;
+    width: 100%;
+    & > a {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        margin-right: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & > img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+.loginClassBtn {
+    width: calc(100% - 70px);
+    position: absolute;
+    bottom: 35px;
+    right: 35px; 
+    @extend .fontFamB;
+    cursor: pointer;
+    border: none !important;
+    outline: none !important;
+    &>button{
+        @extend .btn_height58;
+        background-color: var(--buttonColorNormal);
+        color: #fff;
+        border-radius: 8px !important;
+        @extend .fontFamR;
+        font-size: 13px;
+    }
+    @media (max-width: master.$xl) {
+        width: calc(100% - 60px);
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        &>button{
+            height: 48px!important;
+            font-size: 12px;
+
+        }
+    }
+    @media (max-width: master.$sm) {
+        width: calc(100% - 48px);
+        right: 24px;
+        bottom: 24px;
+        &>button{
+            font-size: 13px;
+
+        }
+    }
+}
+.divider {
+    color: var(--textColorBorder);
+    width: calc(100%);
+    height: 1px;
+    position: absolute;
+    top: 91px;
+    right: 0px;
+    @media (max-width: master.$xl) {
+        top: 75px;
+    }
+    @media (max-width: master.$sm) {
+        top: 65px;
+    }
+}
+
+.filterClassesDropDown {
+    width: 170px !important;
+}
+
+.userHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0px;
+    @media (max-width: master.$md) {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 19px;
+        margin-top: 4px;
+        padding: 0px 24px
+
+    };
+};
+.searchUserContainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    @media (max-width: master.$sm) {
+        width: 100%;
+    };
+
+};
+.searchDesktop{
+    @media (max-width: master.$md) {
+        width: 100%;
+        margin-top: 26px;
+        & input{
+            width: 100% !important;
+            background-color: #f4f4f6;
+            border: none
+        };
+    };
+};
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    cursor: pointer;
+    position: relative;
+    @media (max-width: 1000px) {
+        margin-left: 20px;
+    };
+    @media (max-width: master.$md) {
+        margin-left: 0px;
+    };
+    & input{
+        height: 40px;
+        width: 48px;
+        outline: none !important;
+        @extend .fontFamR;
+        pointer-events: none;
+        border: 1px solid var(--textColorBorder) !important;
+        transition: ease all 300ms;
+        border-radius: 24px;
+        &::placeholder{
+            color: var(--textColorSecondary)
+        }
+        @media (max-width: master.$sm) {
+            border: none !important;
+        };
+
+    };
+};
+.searchExpand{
+    justify-content: space-between;
+    & input{
+        display: block;
+        width: 362px;
+        @extend .fontFamR;
+        padding: 0 12px;
+        pointer-events: unset !important;
+        @media (max-width: master.$xl) {
+            width: 287px;
+        };
+        @media (max-width: master.$sm) {
+            width: 100%;
+        };
+    };
+    & img{
+        position: absolute;
+        left: 20px;
+        top:9px;
+    }
+};
+.searchIcon{
+    position: absolute;
+    left: 13px;
+};
+.nodata{
+    margin-top: 80px;
+    padding-top: 30px;
+    height: max-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width:master.$sm) {
+        margin-top: 30px;
+        margin-bottom: 20
+    };
+    &>img{
+        width: 51px;
+        margin-bottom: 20
+    };
+    &>p{
+        font-size: 13px;
+        color: var(--textColorSecondary);
+        margin: 5px 0
+    }
+};
+.userTapGridView{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 362px 362px 362px;
+    column-gap: 25px;
+    row-gap: 18px;
+    @media (max-width:master.$xl) {
+        grid-template-columns: 287px 287px 287px;
+        column-gap: 19px;
+    };
+    @media (max-width:master.$lg) {
+        grid-template-columns: calc(33.3333% - 13px) calc(33.3333% - 13px) calc(33.3333% - 13px);
+        column-gap: 19.5px;
+    };
+    @media (max-width: 1000px) {
+        grid-template-columns: calc(50% - 9.5px) calc(50% - 9.5px);
+        column-gap: 19px;
+    };
+    @media (max-width:master.$sm) {
+        grid-template-columns: 100%;
+        padding-right:24px;
+        column-gap: 0px;
+        row-gap: 0
+    };
+};
+.addMemberContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    // padding: 0 14px;
+    &>div{
+        padding-bottom: 18px !important;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: 73px;
+        padding: 0 16px;
+        border-bottom: 1px solid rgb(231,236,240);
+        @media (max-width: master.$sm) {
+            padding: 11px 0;
+            border-bottom: none;
+            position: relative;
+            &:after{
+                content: "";
+                position: absolute;
+                width: calc(100% - 60px);
+                left: 0;
+                bottom: 0px;
+                height: 1px;
+                background-color: var(--textColorBorder)
+            }
+
+        };
+        &>div{
+            width: 48px;
+            height: 48px;
+            border: 1px solid rgba(12, 11, 49, 0.16);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 24px;
+            margin-left: 12px;
+            &>img{
+                width: 24
+            }
+        }
+    }
+};
+
+////memberTableCell.js
+
+.singleMemberContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &>div{
+        padding-bottom: 18px !important;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        padding: 0 16px;
+        border-bottom: 1px solid rgb(231,236,240);
+        @media (max-width: master.$sm) {
+            padding: 7px 0 7px 24px !important;
+            border-bottom: none;
+            position: relative;
+            &:after{
+                content: '';
+                position: absolute;
+                width: calc(100% - 60px);
+                left: 0;
+                bottom: 0px;
+                height: 1px;
+                background-color: var(--textColorBorder)
+            }
+
+        };
+    }
+};
+.myClassAvatarWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+};
+.myClassNameWrapper{
+    margin-right: 10px;
+    font-size: 13px;
+    text-align: right;
+    & :first-child{
+        @extend .fontFamM;
+        color: var(--textColorPrimary);
+    };
+    & p{
+        font-size: 13px;
+        margin: 0px;
+        max-width:200px;
+        @extend .limitText;
+        @media (max-width: master.$xl) {
+            max-width:150px;
+
+        }
+        
+    };
+};
+.actionWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+};
+.classShareModal{
+    height:365px !important;
+}
+.filterDropdown{
+    height: 40px !important;
+    border-radius: 25px !important;
+}

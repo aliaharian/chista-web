@@ -1,0 +1,53 @@
+@use "../../../../components/Kit/Style/kits.module.scss" as master;
+
+.memebrAvatarWrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.memebrAvatarOpinion {
+    width: 48px !important;
+    height: 48px !important;
+    font-size: 13px;
+    border-radius: 50%;
+    @extend .fontFamM;
+    @media (max-width: master.$xl) and (min-width: master.$sm) {
+        font-size: 12px;
+    }
+    @media (max-width: master.$xl) and (min-width: master.$sm){
+        width: 45px !important;
+        height: 45px !important;
+    }
+    // @media (max-width: master.$sm) {
+    //     height: calc(100% - 175px);
+    //     width: calc(100% + 48px);
+    //     margin: 0 -24px;
+    // }
+}
+.memebrAvatarBorder {
+    border: 1px solid transparent;
+    border-radius: 100px;
+    overflow: hidden;
+    padding: 0px;
+    position: relative;
+}
+.memebrNameWrapper {
+    margin-right: 19px;
+    text-align: right;
+    font-size: 13px;
+    color: var(--textColorSecondary);
+
+    & p:first-child {
+        color: var(--textColorPrimary);
+
+        @extend .fontFamM;
+        margin-bottom: 5px;
+    }
+    & p {
+        font-size: 13px;
+        margin: 0;
+        @media (max-width: master.$xl) and (min-width: master.$sm) {
+            font-size: 12px;
+        }
+    }
+}

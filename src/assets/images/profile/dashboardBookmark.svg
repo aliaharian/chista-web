@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Bookmark_Favorite_Circle.1" width="60" height="60" viewBox="0 0 60 60">
+    <defs>
+        <style>
+            .cls-4{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;stroke:#3f53d9}
+        </style>
+    </defs>
+    <path id="Path_4009" fill="none" d="M0 0h60v60H0z"/>
+    <path id="Path_4010" fill="#fff" stroke="#2a2f33" stroke-linecap="round" stroke-linejoin="round" stroke-width="3px" d="M34 35.5V48l-14.98-7.5L4 48V8a5 5 0 0 1 5-5h20a5 5 0 0 1 5 5v5" transform="translate(6 4.5)"/>
+    <path id="Path_4011" fill="rgba(63,83,217,0.4)" stroke="#3f53d9" stroke-linecap="round" stroke-linejoin="round" stroke-width="3px" d="M22.75 29.5A11.251 11.251 0 0 1 11.5 18.25 11.423 11.423 0 0 1 22.757 7a11.25 11.25 0 0 1-.007 22.5" transform="translate(17.25 10.5)"/>
+    <path id="Path_4012" d="M16 9.981v7.592" class="cls-4" transform="translate(24 14.972)"/>
+    <path id="Path_4013" d="M22.074 11.5h-7.592" class="cls-4" transform="translate(21.723 17.25)"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg id="Blackboard" xmlns="http://www.w3.org/2000/svg" width="71.811" height="71.811">
+    <defs>
+        <style>
+            .cls-1,.cls-2{fill:#ffbfbf;stroke:#0c0b31;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.5px}.cls-2{fill:none}
+        </style>
+    </defs>
+    <g id="Group_868" data-name="Group 868" transform="translate(8.972 7.477)">
+        <path id="Path_10356" data-name="Path 10356" class="cls-1" d="M53.873 22.972H3V14h53.866v8.972z" transform="translate(-3 20.418)"/>
+        <path id="Path_10357" data-name="Path 10357" class="cls-2" d="M6.993 4H4v29.908h47.884V4h-2.993" transform="translate(-1.009 .486)"/>
+        <path id="Path_10358" data-name="Path 10358" class="cls-2" d="M17.991 28.963 15 17" transform="translate(20.912 26.398)"/>
+        <path id="Path_10359" data-name="Path 10359" class="cls-2" d="M8 28.963 10.991 17" transform="translate(6.963 26.398)"/>
+        <path id="Path_10360" data-name="Path 10360" class="cls-1" d="M33.946 11.472H7V2.5h29.939v8.972z" transform="translate(4.963 -2.5)"/>
+        <path id="Path_10361" data-name="Path 10361" class="cls-2" d="M22.982 4H17" transform="translate(24.903 .486)"/>
+        <path id="Path_10362" data-name="Path 10362" class="cls-2" d="M10.982 4H5" transform="translate(.982 .486)"/>
+    </g>
+    <path id="Path_10363" data-name="Path 10363" d="M0 0h71.811v71.811H0z" style="fill:none"/>
+</svg>

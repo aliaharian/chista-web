@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Search_Loupe_Question" width="135" height="135" viewBox="0 0 135 135">
+    <defs>
+        <style>
+            .cls-3{fill:none;stroke:#3f53d9;stroke-linecap:round;stroke-linejoin:round;stroke-width:7px}
+        </style>
+    </defs>
+    <path id="Path_19244" fill="#3f53d9" d="M41.981 79.962A37.98 37.98 0 0 1 4 41.981 37.98 37.98 0 0 1 41.981 4a37.98 37.98 0 0 1 37.981 37.981 37.98 37.98 0 0 1-37.981 37.981z" opacity="0.1" transform="translate(29.542 26.542)"/>
+    <path id="Path_6374" fill="none" d="M0 0h135v135H0z"/>
+    <path id="Path_6375" d="M46 88A42 42 0 0 1 4 46 42 42 0 0 1 46 4a42 42 0 0 1 42 42 42 42 0 0 1-42 42z" class="cls-3" transform="translate(18.5 18.5)"/>
+    <path id="Path_6378" d="M35.031 35.031L16.75 16.75" class="cls-3" transform="translate(77.469 77.469)"/>
+    <path id="Path_4826" d="M31.331 9.17L9.17 31.331" class="cls-3" transform="translate(44.63 44.63)"/>
+    <path id="Path_4827" d="M31.331 31.331L9.17 9.17" class="cls-3" transform="translate(44.63 44.63)"/>
+</svg>

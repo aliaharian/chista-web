@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Pen_Edit.6" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#4264fb;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}
+        </style>
+    </defs>
+    <g id="Group_482" transform="translate(3 3.055)">
+        <path id="Path_6031" d="M17.652 4.751l-1.4-1.4a1 1 0 0 0-1.414 0L4 14.182V17h2.818L17.652 6.166a1 1 0 0 0 0-1.415z" class="cls-1" transform="translate(-3 -3.055)"/>
+        <path id="Path_6032" d="M3 21h18" class="cls-1" transform="translate(-3 -3.055)"/>
+        <path id="Path_6033" d="M15.87 7.95l-2.82-2.82" class="cls-1" transform="translate(-3 -3.055)"/>
+    </g>
+    <path id="Path_6034" fill="none" d="M0 0h24v24H0z"/>
+</svg>

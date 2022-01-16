@@ -1,0 +1,264 @@
+@use "../../../../components/Kit/Style/kits.module.scss" as master;
+
+.myClassMenuContainerDesktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & > div:nth-child(1) {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        & > .myClassMenuSearch {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            position: relative;
+            width: 362px;
+            height: 40px;
+            border: 1px solid rgba(12, 11, 49, 0.16);
+            border-radius: 24px;
+            padding: 0 12px;
+            margin-left: 25px;
+            @media (max-width: master.$xl) {
+                width: 287px;
+                margin-left: 19px;
+            }
+            & > input {
+                border: none;
+                width: 100%;
+                height: 100%;
+                outline: none !important;
+                @extend .fontFamR;
+                transition: ease all 300ms;
+                border-radius: 24px;
+                &::placeholder {
+                    color: rgba(12, 11, 49, 0.5);
+                }
+            }
+            & > div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    & > button {
+        @extend .btn_height40;
+        width: 115px;
+        text-align: center;
+        background-color: #3f53d9;
+        color: white;
+        @extend .fontFamR;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 7px 0 19px;
+        &:hover {
+            background-color: #3a4cc8;
+            cursor: pointer;
+        }
+    }
+    & > button:focus {
+        outline: none;
+    }
+}
+
+.mobileAddClassHeader {
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+    margin-bottom: 0px;
+    @media (max-width: master.$md) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    & > button {
+        @extend .btn_height40;
+        width: 112px;
+        text-align: center;
+        background-color: #3f53d9;
+        color: white;
+        @extend .fontFamR;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 7px 0 19px;
+        &:hover {
+            background-color: #3a4cc8;
+            cursor: pointer;
+        }
+    }
+    & > button:focus {
+        outline: none;
+    }
+}
+.filterClassesDropDown {
+    width: 170px !important;
+}
+.breadCrumb {
+    // width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    // margin-bottom: 27px;
+    // marginTop: 5px;
+    margin: 0px;
+    @media (max-width: master.$xs) {
+        margin-bottom: 0px;
+        margintop: 0px;
+    }
+    & > p {
+        @extend .fontFamB;
+        color: var(--textColorPrimary);
+        margin: 0;
+    }
+    & > svg {
+        margin-left: 7px;
+    }
+}
+.addClassResBtn {
+    display: flex;
+    & > button {
+        width: 112px;
+        height: 40px;
+        border: 1px solid var(--buttonColorNormal);
+        border-radius: 24px;
+        color: white;
+        & svg {
+            margin-left: 4;
+        }
+        & span {
+            font-size: 12;
+        }
+        &:hover {
+            background-color: var(--ButtonColorHover);
+        }
+    }
+    @media (max-width: master.$sm) {
+        background-color: var(--buttonColorNormal);
+    }
+}
+.statusWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 115px;
+    margin-left: 30px;
+}
+
+.statusWrapperActive {
+    // background-color: rgba(52px; 194px; 120px; 0.1);
+    background-color: #3f53d9;
+    font-size: 13px;
+    color: white;
+    border-radius: 20px;
+    &:hover {
+        background-color: var(--buttonColorNormal);
+        border: 1px solid #3f53d9;
+
+        color: #fff;
+    }
+}
+.addClass {
+    margin-left: 0px;
+}
+.headerWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: master.$sm) {
+        margin-bottom: 26px;
+    }
+}
+.searchMobile {
+    width: 50px;
+    margin: 0px;
+    height: 48px;
+    display: none;
+
+    & > input {
+        border: none;
+        transition: none;
+        padding: 0 10px;
+    }
+    & > svg {
+        right: 10;
+    }
+    @media (max-width: master.$sm) {
+        display: block;
+    }
+}
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    cursor: pointer;
+    position: relative;
+    & input {
+        height: 40px;
+        width: 48px;
+        outline: none !important;
+        @extend .fontFamR;
+        pointer-events: none;
+        border: 1px solid var(--textColorBorder);
+        transition: ease all 300ms;
+        border-radius: 24px;
+        &::placeholder {
+            color: var(--textColorSecondary);
+        }
+    }
+}
+.searchExpandMobile {
+    justify-content: space-between;
+    width: 300px;
+    height: 40px;
+    & input {
+        border: 1px solid var(--textColorBorder);
+        display: block;
+        width: 100%;
+        padding: 0 15px;
+        pointer-events: unset !important;
+    }
+    //@media (max-width: master.$xs){
+    //     width: 200px;
+    //
+    // };
+    @media (max-width: master.$sm) {
+        margin-left: 8;
+        & input {
+            border: 1px solid transparent;
+            background-color: #f4f4f6;
+        }
+    }
+}
+
+.classSearchLoading {
+    position: absolute;
+    left: 50px;
+    width: 15px !important;
+    height: 15px !important;
+    color: var(--buttonColorNormal);
+    top: 13px;
+    @media (max-width: master.$sm) {
+        top: 16;
+    }
+}
+
+.searchIcon {
+    position: absolute;
+    color: var(--textColorPrimary);
+    left: 15px;
+    top: 8px;
+}
+.filterDropdown {
+    height: 40px !important;
+    border-radius: 25px !important;
+}

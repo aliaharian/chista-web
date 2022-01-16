@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Plus_Add" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#2a2f33;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}
+        </style>
+    </defs>
+    <path id="Path_6080" fill="none" d="M0 0h24v24H0z"/>
+    <path id="Path_6081" d="M18 20H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2z" class="cls-2"/>
+    <path id="Path_6082" d="M12 8v8" class="cls-2"/>
+    <path id="Path_6083" d="M16 12H8" class="cls-2"/>
+</svg>

@@ -1,0 +1,104 @@
+$mobileSm: 480px;
+$mobile: 800px;
+$desktopSm: 1800px;
+
+.contactsBackdropRoot {
+    transition: all 500ms ease !important;
+}
+.contactsDialogRoot {
+    border-radius: 16px !important;
+    width: 464px !important;
+    height: 615px !important;
+    padding: 17px 0;
+    overflow: hidden;
+    @media (max-width: $desktopSm) {
+        width: 386px !important;
+        height: 512px !important;
+    }
+    @media (max-width: $mobileSm) {
+        width: 100% !important;
+        margin: 0;
+        padding-top: 0;
+        height: calc(100% - 0px) !important;
+        border-radius: 0 !important;
+        max-width: 100% !important;
+        max-height: 100% !important;
+    }
+}
+.contactsDialog {
+    @media (max-width: $mobileSm) {
+        align-items: flex-end !important;
+        transition: all 500ms ease !important;
+    }
+}
+.contactsDialogHeaderWrapper {
+    position: relative;
+    min-height: 74px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 17px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-bottom: 6px;
+    justify-content: center;
+    @media (max-width: $desktopSm) {
+        padding-left: 27px;
+        padding-right: 27px;
+        min-height: 59px;
+    }
+    @media (max-width: $mobileSm) {
+        min-height: 65px;
+        height: 65px;
+        padding: 17.5px 24px;
+        margin-bottom: 16;
+    }
+}
+
+.contactModalSelectAddClassTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    height: 30px;
+    width: 100%;
+
+    & > div:nth-child(1) {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    & p {
+        margin: 0;
+        font-family: var(--fontBold);
+        font-size: 14px;
+        color: var(--textColorPrimary);
+        @media (max-width: $desktopSm) {
+            lineheight: 16px;
+            font-size: 12px;
+            font-family: var(--fontRegular);
+        }
+        @media (max-width: $mobileSm) {
+            line-height: 20px;
+            font-size: 13px;
+            font-family: var(--fontBold);
+
+        }
+    }
+    & img {
+        cursor: pointer;
+    }
+    & svg {
+        font-size: 18px;
+        color: var(--textColorPrimary);
+        cursor: pointer;
+        margin-left: 11px;
+    }
+}
+.divider {
+    color: var(--textColorBorder);
+    width: calc(100%);
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

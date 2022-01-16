@@ -1,0 +1,10 @@
+<svg id="Group_13543" data-name="Group 13543" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <path id="Path_29540" data-name="Path 29540" d="M20,0A20,20,0,1,1,0,20,20,20,0,0,1,20,0Z" fill="rgba(255,101,117,0.15)"/>
+  <g id="Emails_Letter_Mail" data-name="Emails, Letter, Mail" transform="translate(8 8)">
+    <path id="Path_29535" data-name="Path 29535" d="M3,6.782H3a1.781,1.781,0,0,0,.782,1.475L9.763,12.31a4,4,0,0,0,4.488,0l5.966-4.044A1.777,1.777,0,0,0,21,6.792v-.01A1.782,1.782,0,0,0,19.218,5H4.782A1.782,1.782,0,0,0,3,6.782Z" fill="none" stroke="#ff6575" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_29536" data-name="Path 29536" d="M3,7V17a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2V7" fill="none" stroke="#ff6575" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_29537" data-name="Path 29537" d="M3.586,18.414l6.14-6.14" fill="none" stroke="#ff6575" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_29538" data-name="Path 29538" d="M14.281,12.281l6.13,6.13" fill="none" stroke="#ff6575" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_29539" data-name="Path 29539" d="M0,0H24V24H0Z" fill="none" fill-rule="evenodd"/>
+  </g>
+</svg>

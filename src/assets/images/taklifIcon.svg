@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Delivery_Check_List" width="35" height="35" viewBox="0 0 35 35">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#0c0b31;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.25px}
+        </style>
+    </defs>
+    <path id="Path_20437" fill="none" d="M0 0h35v35H0z"/>
+    <g id="Group_14003" transform="translate(5.462 1.477)">
+        <path id="Path_29015" d="M13 18h7.6" class="cls-2" transform="translate(-7.831 2.393)"/>
+        <path id="Path_29014" d="M13 14h13.292" class="cls-2" transform="translate(-7.831 0.566)"/>
+        <g id="Group_15522">
+            <path id="Path_29023" d="M22.844 14.815V5.954A3.056 3.056 0 0 0 19.693 3h-2.56" class="cls-2" transform="translate(0.786 -0.046)"/>
+            <path id="Path_29024" d="M10.786 3H8.151A3.034 3.034 0 0 0 5 5.9v20.33a3.034 3.034 0 0 0 3.151 2.9h6.1" class="cls-2" transform="translate(-5 -0.046)"/>
+            <path id="Path_20430" d="M8 4.954l1.92-2.4A1.478 1.478 0 0 1 11.073 2h5.67a1.478 1.478 0 0 1 1.153.554l1.918 2.4v1.477a1.477 1.477 0 0 1-1.477 1.477h-8.86A1.477 1.477 0 0 1 8 6.431V4.954z" class="cls-2" transform="translate(-2.092 -2)"/>
+        </g>
+        <path id="Path_29025" d="M18.945 24.574l6.629-6.629a1.5 1.5 0 0 0 0-2.123l-2.382-2.382a1.5 1.5 0 0 0-2.123 0l-6.629 6.629A1.5 1.5 0 0 0 14 21.13v3.883h3.883a1.5 1.5 0 0 0 1.062-.44z" class="cls-2" transform="translate(-0.708 7.032)"/>
+    </g>
+</svg>

@@ -1,0 +1,581 @@
+@use '../../../components/Kit/Style/kits.module.scss' as master;
+
+
+.packetsWrapper {
+  width: 100%;
+  @media (max-width: master.$md) {
+    padding: 0 0 104px 0px;
+  }
+  & .infinite-scroll-component {
+    overflow: unset !important;
+    width: 100%;
+  }
+  & > div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width: master.$md) {
+      // flex-direction: column
+    }
+  }
+}
+.breadCrumbRes {
+  padding-right: 34px;
+  height: 65px;
+
+  margin-bottom: 24px;
+  @media (max-width: 480px) {
+    padding-right: 24px;
+  }
+}
+.breadCrumb {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 55px;
+  @media (max-width: master.$md) {
+    height: 65px;
+  }
+
+  & > img:nth-child(1) {
+    width: 20px;
+    margin-left: 8px;
+  }
+  & > p:nth-child(2) {
+    @extend .fontFamB;
+    color: var(--textColorPrimary);
+  }
+  & > svg:nth-child(3) {
+    margin: 0 8px;
+    color: var(--textColorPrimary);
+  }
+  & > p:nth-child(4) {
+    color: var(--textColorSecondary);
+
+    @extend .fontFamR;
+  }
+}
+
+.packetHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: 800px) {
+    width: auto;
+    margin: 0px 34px;
+  }
+  @media (max-width: 480px) {
+    width: 100%;
+    padding: 0px 24px;
+    margin: 0;
+  }
+}
+.borderForNoPacket {
+  border-bottom: 1px solid rgba(12, 11, 49, 0.16);
+  padding-bottom: 50px;
+  margin-bottom: 50px !important;
+  @media (max-width: master.$xl) {
+    padding-bottom: 50px;
+    margin-bottom: 50px !important;
+  }
+  @media (max-width: master.$md) {
+    padding-bottom: 50px;
+    margin-bottom: 50px !important;
+  }
+}
+.packetHeaderMain {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  @media (max-width: 1800px) {
+    margin-bottom: 30;
+  }
+  @media (max-width: 800px) {
+    padding: 0px 34px;
+  }
+  @media (max-width: 480px) {
+    padding: 0px 24px;
+  }
+}
+.currentPacketInfoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  width: 100%;
+}
+.currentPacketInfoContainerSub {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  width: 100%;
+}
+.currentPacketInfo {
+  @media (max-width: master.$md) {
+    padding-right: 0 !important;
+  }
+  & > p:nth-child(2) {
+    font-size: 13px;
+    @extend .fontFamB;
+    color: var(--textColorPrimary);
+    margin-bottom: 5px;
+    @media (max-width: master.$xl) {
+      font-size: 12px;
+    }
+    & span {
+      font-size: 18;
+    }
+    @media (max-width: master.$md) {
+      font-size: 12px;
+    }
+  }
+  & > p:nth-child(1) {
+    font-size: 13px;
+    width: 160px;
+    @extend .fontFamR;
+    color: var(--textColorSecondary);
+    & > img {
+      @media (max-width: master.$xl) {
+        width: 20px !important;
+      }
+    }
+    @media (max-width: master.$xl) {
+      font-size: 12px;
+    }
+  }
+}
+.extendBtn {
+  all: unset;
+  border-radius: 300px;
+  cursor: pointer;
+  margin-left: 19px;
+  padding: 11px 27px;
+  background-color: var(--buttonColorNormal);
+  color: white;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease-in-out;
+  padding: 0px;
+  width: 113px;
+  font-size: 13px;
+  line-height: 18px;
+  height: 40px;
+  @media (max-width: master.$xl) {
+    padding: 0px;
+    width: 94px;
+    font-size: 12px;
+    line-height: 16px;
+    height: 30px;
+    // padding: 7px 20px
+  }
+  @media (max-width: master.$sm) {
+    padding: 0px;
+    width: 100px;
+    font-size: 13px;
+    line-height: 18px;
+    height: 35px;
+    margin-left: 15px;
+  }
+  & svg {
+    margin-left: 3px;
+  }
+  & span {
+    font-size: 13px;
+    line-height: 18px;
+    @extend .fontFamR;
+    @media (max-width: master.$xl) {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+  &:hover {
+    background-color: #3748bb;
+  }
+}
+.extendWidth{
+  width: 90px;
+}
+.packetMenuLink {
+  font-size: 13px;
+  background-color: #fff !important;
+  z-index: 990px;
+  min-height: 43px;
+  @media (max-width: master.$sm) {
+    min-height: auto;
+  }
+  & > div {
+    text-decoration: none !important;
+    color: var(--textColorSecondary);
+    width: 100%;
+  }
+  &:hover {
+    background-color: rgb(245, 248, 250) !important;
+    & > div {
+      color: var(--textColorPrimary);
+    }
+  }
+}
+.packetActions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.packetBuyActions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 200px;
+  & > button {
+    margin-left: 0 !important;
+  }
+}
+.packetTitle {
+  font-size: 20px !important;
+  width: 100% !important;
+  @extend .fontFamB;
+  color: var(--textColorPrimary) !important;
+  margin-bottom: 0px !important;
+  @media (max-width: master.$xl) {
+    font-size: 18px !important;
+  }
+}
+.packetIcon {
+  padding: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 0px;
+  // background-color: theme.textColor.fivePercent;
+  // border: 1px solid ${theme.textColor.border};
+  // margin-right: 15px;
+  @media (max-width: master.$md) {
+    padding-left: 10px;
+  }
+
+  & > svg {
+    color: var(--textColorPrimary);
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.packetItemParent {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  @media (max-width: master.$xl) {
+    margin-top: 30px;
+  }
+  // @media(max-width:master.$md){
+  //     position: relative;
+  //     width: 100vw;
+  //     margin: 0 -24px;
+  //     &:before{
+  //         content: ;
+  //         width: 100vw;
+  //         height: 1px;
+  //         position: absolute;
+  //         top: 34px;
+  //         right: 0px;
+  //         background-color: theme.textColor.border;
+  //     }
+  //     &:after{
+  //         content: ;
+  //         width: 100vw;
+  //         height: 1px;
+  //         position: absolute;
+  //         bottom: 10px;
+  //         right: 0px;
+  //         background-color: theme.textColor.border;
+  //     }
+
+  // }
+}
+
+.packetItem {
+  width: 100%;
+  height: 442px;
+  border-radius: 8px;
+  // border: 1px solid ${theme.textColor.border};
+  margin-top: 0px;
+  position: relative;
+  @media (max-width: 1200px) {
+    height: auto;
+  }
+  // min-width: 1068px;
+  // @media(max-width:master.$sm){
+  //     padding: 40px 0 30px 0px;
+
+  // }
+}
+.packetItemTitle {
+  font-size: 13px;
+  @extend .fontFamB;
+  color: var(--textColorPrimary);
+  position: absolute;
+  top: -10px;
+  left: 48px;
+  background-color: #fff;
+  padding: 0 16px;
+  // @media(max-width:master.$md){
+  //     top: 25px;
+  //     left: 0px;
+  //     background-color: #fff;
+  //     padding: 0 24px;
+  //     display: flex;
+  //     align-items: center;
+  //     justify-content: center
+
+  // }
+}
+.chart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid rgba(12, 11, 49, 0.16);
+  border-radius: 16px;
+  padding: 50px 50px 30px;
+  @media (max-width: master.$md) {
+    border-radius: 16px;
+    min-height: 275px;
+    width: auto;
+    margin: 0 34px;
+    padding: 30px;
+  }
+  @media (max-width: master.$sm) {
+    border-right: none;
+    border-left: none;
+    border-radius: 0px;
+    min-height: 275px;
+    width: 100%;
+    margin: 0px;
+    padding: 50px 24px;
+  }
+  // & .highcharts-container:{
+  //     width:100% !important
+  // }
+}
+.chartData {
+  width: 100%;
+  height: 322px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+  & > div {
+    width: 100%;
+  }
+  & .highcharts-axis-labels {
+    & > span {
+      @media (max-width: master.$md) {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        width: max-content !important;
+      }
+    }
+  }
+  & text,
+  & p {
+    @extend .fontFamR;
+    font-size: 13px;
+    color: var(--textColorPrimary);
+    @media (max-width: master.$md) {
+      font-size: 11px;
+    }
+    // direction: ltr;
+  }
+  @media (max-width: master.$md) {
+    overflow-x: auto;
+    height: 319px;
+  }
+}
+
+.chartCalendar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+  height: 27px;
+  & > svg {
+    color: var(--textColorPrimary);
+  }
+  & > p {
+    width: 120px;
+    min-width: 120px;
+    text-align: center;
+    font-size: 13px;
+    @extend .fontFamB;
+    color: var(--textColorPrimary);
+  }
+}
+.chartVerticalNumbers {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column-reverse;
+  height: 100%;
+  padding-bottom: 55px;
+  margin-right: 16px;
+  @media (max-width: master.$md) {
+    position: absolute;
+    right: 34px;
+    height: max-content;
+    padding-bottom: 0px;
+    top: 74;
+  }
+  @media (max-width: 600px) {
+    right: 24px;
+  }
+  & > div {
+    line-height: 18px;
+    margin-top: 14px;
+    font-size: 13px;
+    @media (max-width: master.$md) {
+      font-size: 11px;
+      margin-top: 12.5px;
+      line-height: 12px;
+    }
+    &:last-child {
+      margin-top: 0px;
+      margin-bottom: 10;
+    }
+  }
+}
+.dayChartTitles {
+  transform: rotateZ(90deg);
+  width: 34;
+}
+.chartBar {
+  width: 9px;
+  height: 287px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  margin-right: 22px;
+  @media (max-width: master.$md) {
+    height: 190px;
+  }
+  &:hover {
+    color: var(--textColorPrimary);
+  }
+  & > p {
+    position: absolute;
+    bottom: 0px;
+    line-height: 18px;
+    font-size: 13px;
+    @media (max-width: master.$md) {
+      font-size: 11px;
+      bottom: -14;
+    }
+  }
+}
+.moreSpace {
+  margin-right: 30px;
+  height: 302px;
+  @media (max-width: master.$md) {
+    height: 211;
+  }
+}
+.noDataContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column !important;
+  margin: 0 auto;
+  @media (max-width: master.$sm) {
+    padding: 0 8px;
+  }
+}
+.statusWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 110px;
+  margin-left: 30px;
+}
+.statusWrapperActive {
+  border: 1px solid #3f53d9;
+  font-size: 13px;
+  color: var(--buttonColorNormal);
+  background-color: #fff;
+  border-radius: 24px;
+  &:hover {
+    background-color: var(--buttonColorNormal);
+    border: 1px solid #3f53d9;
+
+    color: #fff;
+  }
+}
+
+.dayLetter {
+  position: absolute;
+  left: 30px;
+  bottom: 83px;
+  margin: 0px;
+  font-size: 13px;
+  @extend .fontFamM;
+  color: var(--textColorPrimary);
+  @media (max-width: master.$md) {
+    background-color: #fff;
+    bottom: 60px;
+  }
+}
+.personLetter {
+  font-size: 13px;
+  @extend .fontFamM;
+  color: var(--textColorPrimary);
+}
+.backToMonth {
+  position: absolute;
+  right: 60px;
+  bottom: 29px;
+  font-size: 13px;
+  color: var(--buttonColorNormal);
+  @extend .fontFamM;
+  cursor: pointer;
+  @media (max-width: master.$sm) {
+    right: 24px;
+    bottom: 51px;
+  }
+}
+.chartInfo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  @media (max-width: master.$md) {
+    padding: 0 24px;
+  }
+  & svg {
+    margin-top: 4px;
+  }
+  & > p {
+    font-size: 13px;
+    color: var(--textColorSecondary);
+    @extend .fontFamR;
+    margin-right: 12px;
+    line-height: 32px;
+    & > a {
+      font-size: 13px;
+      color: var(--buttonColorNormal);
+      @extend .fontFamR;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Messages_Chat" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#34c278;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}
+        </style>
+    </defs>
+    <path id="Path_13204" fill="none" d="M0 0h24v24H0z"/>
+    <path id="Path_13208" d="M12 21l-3-4H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-4l-3 4" class="cls-2"/>
+    <path id="Path_13287" d="M11.943 13H7" class="cls-2" transform="translate(1.001 -.626)"/>
+    <path id="Path_13288" d="M7 8h7.748" class="cls-2" transform="translate(1.001 .5)"/>
+</svg>

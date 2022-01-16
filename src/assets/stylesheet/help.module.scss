@@ -1,0 +1,937 @@
+$xs: 0px;
+$sm: 480px;
+$xmd: 800px;
+$md: 1200px;
+$lg: 1800px;
+$xl: 192px;
+$primaryColor:#0c0b31;
+$secondaryColor:#0c0b31cc;
+$mediumFont: chistayekanM;
+$regularFont: chistayekanR;
+$boldFont: chistayekanB;
+
+.howToHelp {
+    background-color: rgb(63, 83, 217);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    @media (max-width: $xmd) {
+        padding: 90px 24px;
+    }
+
+    & > img {
+        width: 61px;
+        height: 61px;
+        @media (max-width: $lg) {
+            width: 50px;
+            height: 50px;
+        }
+        @media (max-width: $sm) {
+            width: 46px;
+            height: 46px;
+        }
+    }
+    
+    & > p {
+        color: white;
+        font-family: $boldFont;
+        font-size: 24px;
+        margin: 0px auto 65px;
+        @media (max-width: $lg) {
+            margin: 0px auto 50px;
+            font-size: 20px;
+        }
+        @media (max-width: $sm) {
+            margin: 0px auto 48px;
+            font-size: 16px;
+        }
+    }
+}
+.searchView {
+    position: relative;
+    width: 610px;
+    height: 60px;
+    @media (max-width: $lg) {
+        width: 508px;
+    }
+    @media (max-width: 556px) {
+        width: 100%;
+    }
+    @media (max-width: $sm) {
+        width: 100%;
+        height: 48px;
+    }
+}    
+
+.searchInput {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    margin: auto;
+    padding: 0 20px;
+    height: 100%;
+    border-radius: 32px;
+    width: 100%;
+    & > input {
+        border: none;
+        width: 100%;
+        font-size: 13px;
+        line-height: 18px;
+        font-family: $regularFont;
+        color: $primaryColor;
+        &:focus {
+            outline: none;
+        }
+        @media (max-width: $lg) {
+            font-size: 12px;
+            line-height: 16px;
+        }
+        @media (max-width: $sm) {
+            font-size: 13px;
+            line-height: 18px;
+        }
+    }
+
+    & > img {
+        width: 20px;
+        cursor: pointer;
+        @media (max-width: $sm) {
+            width: 24px;
+        }
+    }
+}
+
+.suggestView {
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    margin: 8px 0 0;
+    border-radius: 8px;
+    padding: 8px;
+    border: 1px solid rgba(12, 11, 49, 0.16);
+    z-index: 1;
+    & a {
+        outline: none;
+        color: black;
+        text-decoration: none;
+        & > div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 10px 12px;
+            & > p {
+                font-size: 12px;
+                margin: 0 0 0 4px;
+                @media (max-width: $lg) {
+                    font-size: 11px;
+                }
+            }
+        
+            & > span {
+                font-size: 10px;
+                margin-right: 4px;
+                @media (max-width: $lg) {
+                    font-size: 10px;
+                }
+            }
+        }
+        & > div:hover {
+            background-color: rgb(245, 245, 247);
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    }
+}
+    
+.helpFeaturesContainer {
+    padding: 100px 0px 140px;
+    margin: auto;
+    @media (max-width: $md) {
+        padding: 100px 34px 140px;
+    }
+    @media (max-width: $sm) {
+        padding: 10px 24px 93px;
+        margin: 0px;
+        width: 100%;
+    }
+}
+
+.helpCardContainer {
+    text-align: center;
+    cursor: pointer;
+    @media (max-width: $xmd) {
+        cursor: none;
+    }
+    & > h4 {
+        font-family: $boldFont;
+        color: $primaryColor;
+        font-size: 18px;
+        text-align: center;
+        position: relative;
+        line-height: 25px;
+        margin: 20px 0 15px;
+        @media (max-width: $lg) {
+          font-size: 16px;
+          margin: 24px 0;
+        }
+        @media (max-width: $sm) {
+            margin: 25px 0;
+            font-size: 18px;
+        }
+    }
+
+    & > div {
+        height: 130px;
+        display: block;
+        margin: auto;
+        @media (max-width: $lg) {
+            height: 108px;
+        }
+        @media (max-width: $sm) {
+            height: 114px;
+        }
+        & > img {
+            height: 100%;
+            display: block;
+            margin: auto;
+        }
+    }
+
+
+    & > p {
+        margin: 0px;
+        font-size: 14px;
+        line-height: 35px;
+        @media (max-width: $lg) {
+            font-size: 13px;
+        }
+        @media (max-width: $sm) {
+            font-size: 14px;
+            line-height: 28px;
+        }
+    }
+}
+
+.helpFeaturesGrid {
+    display: grid;
+    grid-template-columns: 366px 366px 366px;
+    column-gap: 30px;
+    row-gap: 30;
+    @media (max-width: $lg) {
+        grid-template-columns: 348px 348px 348px;
+        column-gap: 31px;
+        row-gap: 36px;
+    }
+    @media (max-width: $md) {
+        grid-template-columns: 50% 50%;
+        column-gap: 0px;
+
+    }
+    @media (max-width: $xmd) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 10px;
+        column-gap: 0px;
+    }
+    & > div {
+        width: 100%;
+        padding: 13px 30px;
+        @media (max-width: $lg) {
+            padding: 22px 24px 21px 24px;
+        }
+        @media (max-width: $sm) {
+            padding: 25px 0;
+        }
+    }
+    & > div:hover  {
+        background-color: #f3f4f8;
+        border-radius: 8px;
+    }
+}
+
+.secondLevelContainer {
+    max-width: 1400px!important;
+    @media (max-width: $lg) {
+        max-width: 1119px!important;
+    }
+    @media (max-width: $sm) {
+        padding: 40px 24px!important;
+    }
+}
+
+.firstLevelContainer {
+    padding: 28px 34px;
+    max-width: 1203px;
+    margin: 0px auto;
+
+    @media (max-width: $lg) {
+        max-width: 967px;
+    }
+
+    @media (max-width: $sm) {
+        padding: 40px 24px;
+    }
+
+    & > .noResult {
+        font-size: 13px;
+        margin: 0px;
+        border-bottom: none;
+        padding-bottom: 642px;
+        @media (max-width: $lg) {
+            font-size: 12px;
+        }
+        @media (max-width: $sm) {
+            font-size: 13px;
+            padding-bottom: 30px;
+        }
+    }
+
+    & > h3 {
+        margin: 0px 0px 20px;
+        font-size: 20px;
+        font-family: $boldFont;
+        color: #0c0b31;
+        line-height: 28px;
+        @media (max-width: $lg) {
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+        
+        @media (max-width: $sm) {
+            font-size: 16px;
+        }
+    }
+
+    & > p {
+        font-size: 13px;
+        margin: 0px;
+        border-bottom: 1px solid #ebebef;
+        padding-bottom: 40px;
+        @media (max-width: $lg) {
+            font-size: 12px;
+        }
+        @media (max-width: $sm) {
+            font-size: 13px;
+            padding-bottom: 30px;
+        }
+    }
+
+    
+
+    & > div {
+        & > h3 {
+            font-size: 20px;
+            font-weight: normal;
+            font-family: $boldFont;
+            line-height: 28px;
+            color: #0c0b31;
+            margin: 0px 0px 20px;
+            @media (max-width: $lg) {
+                margin-top: -10px;
+                margin-bottom: 12px;
+                font-size: 18px;
+            }
+            @media (max-width: $sm) {
+                font-size: 16px;
+                margin-top: -6px;
+                margin-bottom: 20px;
+            }
+        }
+
+        & > p {
+            font-size: 13px;
+            margin: 0 0 30px;
+            @media (max-width: $lg) {
+                font-size: 12px;
+            }
+            @media (max-width: $sm) {
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    & > .firstLevelGridView {
+        display: grid;
+        grid-template-columns: 548px 548px;
+        column-gap: 24.5px;
+        row-gap: 30px;
+        margin-bottom: 112px;
+        @media (max-width: $lg) {
+            grid-template-columns: 436.5px 436.5px;
+            row-gap: 20px;
+        }
+        @media (max-width: $md) {
+            grid-template-columns: 48.5% 48.5%;
+            column-gap: 3%;
+        }
+        @media (max-width: $xmd) {
+            grid-template-columns: 100%;
+            column-gap: 0px;
+            row-gap: 20px;
+            margin-bottom: 100px;
+        }
+    }
+
+}
+
+.locationAndSearchView {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    @media (max-width: $sm) {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+}
+
+.locationView {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(63, 83, 217);
+    margin-left: 8px;
+    & > span {
+        font-size: 13px;
+        line-height: 18px;
+        cursor: pointer;
+        width: max-content;
+        @media (max-width: $lg) {
+            font-size: 12px;
+        }
+        @media (max-width: $sm) {
+            font-size: 13px;
+        }
+    }
+
+    & > img {
+        width: 24px;
+        margin: 0 3px;
+        @media (max-width: $lg) {
+            width: 20px;
+        }
+        @media(max-width: $sm) {
+            width: 24px;
+        }
+    }
+    @media (max-width: $sm) {
+        text-align: right;
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+
+.nextLevelSearchView {
+    position: relative;
+    width: 341px;
+    max-width: 341px;
+    height: 40px;
+    @media (max-width: $sm) {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 24px;
+        height: 48px;
+    }
+}
+
+.nextLevelSearchInput {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    margin: auto;
+    padding: 0px 13px;
+    border-radius: 32px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(12, 11, 49, 0.16);
+
+    & > input {
+        border: none;
+        width: 100%;
+        height: 100%;
+        font-size: 13px;
+        font-family: $regularFont;
+        color: $primaryColor;
+        border-radius: 32px;
+        &:focus {
+            outline: none;
+        }
+        @media(max-width: $lg) {
+            font-size: 12px;
+        }
+        @media(max-width: $sm) {
+            font-size: 13px;
+        }
+    }
+
+    & > img {
+        width: 24px;
+        cursor: pointer;
+    }
+
+    & > .clearSearchText {
+        width: 24px;
+        cursor: pointer;
+    }
+}
+
+.descContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media (max-width: $xmd) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.menuContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 265px;
+    @media (max-width: $lg) {
+        width: 220px;
+    }
+    @media (max-width: $xmd){
+        display: none;
+    }
+
+    & > span {
+        font-size: 13px;
+        color: rgba(12, 11, 49, 0.8);
+        margin-bottom: 30px;
+        cursor: pointer;
+        line-height: 18px;
+        @media (max-width: $lg) {
+            font-size: 12px;
+        }
+    }
+
+    & > span:hover {
+        color: #0c0b31;
+        font-family: $mediumFont;
+    }
+
+    & > .activeSpan {
+        font-size: 13px;
+        color: #3f53d9;
+    }
+    & > .activeSpan:hover {
+        font-size: 13px!important;
+        color: #3f53d9!important;
+        font-family: $regularFont!important;
+    }
+}
+
+.dropDownMenuContainer {
+    display: none;
+    @media (max-width: $xmd) {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-bottom: 1px solid rgba(12, 11, 49, 0.16);
+        border-top: 1px solid rgba(12, 11, 49, 0.16);
+        padding: 20px 0;
+        margin-bottom: 50px;
+    }
+}
+
+.dropdownMenuHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+    color: black;
+
+
+}
+
+
+.dropDownMenuItems {
+    overflow: hidden;
+    transition: 0.4s max-height;
+    & > div {
+        overflow: auto;
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        justify-content: flex-start;
+        & > span {
+            font-size: 13px;
+            color: rgba(12, 11, 49, 0.8);
+            padding-top: 24px;
+            line-height: 18px;
+        }
+    
+        & > .activeSpan {
+            font-size: 13px;
+            color: #3f53d9;
+        }
+    }
+}
+
+.firstLevelSuggestView {
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    margin: 4px 0;
+    border-radius: 8px;
+    padding: 8px;
+    border: 1px solid rgba(12, 11, 49, 0.16);
+    z-index: 1;
+
+    & > a {
+        outline: none;
+        color: black;
+        text-decoration: none;
+        & > div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+    
+            & > p {
+                font-size: 12px;
+                margin: 12px 12px 12px 0px;
+                @media (max-width: $sm) {
+                    font-size: 12px;
+                }
+            }
+        
+            & > span {
+                font-size: 10px;
+                margin-right: 4px;
+                @media (max-width: $sm) {
+                    font-size: 10px;
+                }
+            }
+        }
+        & > div:hover {
+            background-color: rgb(245, 245, 247);
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    }
+    
+}
+
+.firstLevelMainDataItems {
+    cursor: pointer;
+    @media (max-width: $xmd) {
+        cursor: none;
+    }
+    & > p {
+        font-size: 18px;
+        margin: 0 0 10px;
+        font-family: $mediumFont;
+        color: #0c0b31;
+        line-height: 22px;
+        @media (max-width: $lg) {
+            font-size: 16px;
+        }
+        @media (max-width: $sm) {
+            margin-bottom: 4px;
+        }
+    }
+
+    & > div {
+         & > p {
+             border-bottom: 1px solid #ebebef;
+             margin: 0px;
+             padding: 20px 0px;
+             font-size: 13px;
+             line-height: 18px;
+             @media (max-width: $lg) {
+                 font-size: 12px;
+             }
+         }
+
+         & > .dropDownItemsClosed {
+             display: none;
+         }
+
+         & > .dropDownItemsOpened {
+            display: block;
+        }
+
+         & > .firstLevelSeeMoreItems {
+             border-bottom: none!important;
+             color: #3f53d9;
+             cursor: pointer;
+         }
+    }
+
+}
+
+.assessmentContainer {
+    border-top: 1px solid rgba(12, 11, 49, 0.16);
+    margin: auto;
+    text-align: center;
+    padding-top: 16px;
+
+    & > p {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+
+    & > div {
+        margin-top: 4px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 30%;
+        margin: 24px auto;
+        @media (max-width : $md) {
+            width: 100%;
+        }
+    }
+
+    & > textarea {
+        width: 100%;
+        resize: none;
+        padding: 12px;
+        font-family: $regularFont;
+        margin: 24px 0 12px;
+        border-radius: 12px;
+        font-size: 12px;
+    }
+
+    & > textarea:focus {
+        outline: none;
+    }
+}
+
+.goodBtn {
+    width: 40%;
+    background-color: white;
+    color: gray;
+    border: 1px solid rgba(12, 11, 49, 0.16);
+    border-radius: 12px;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: $regularFont;
+}
+
+.badBtn {
+    width: 40%;
+    background-color: rgba(12, 11, 49, 0.16);
+    padding: 8px;
+    border-radius: 12px;
+    border: none;
+    color: gray;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: $regularFont;
+}
+
+.goodBtn .badBtn .assessmentActiveBtn:focus {
+    outline: none;
+}
+
+.assessmentActiveBtn {
+    background-color: rgb(63, 83, 217);
+    width: 40%;
+    padding: 8px;
+    border-radius: 12px;
+    border: 1px solid;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: $regularFont;
+}
+
+.assessmentReasonsContainer {
+    width: 100%!important;
+    margin: 0px!important;
+}
+
+.badAssessmentReasonTxt {
+    font-size: 12px;
+}
+
+.HelpSearchResultsContainer {
+    padding: 20px 0px;
+    border-bottom: 1px solid #ebebef;
+    cursor: pointer;
+
+    & > p {
+        color: rgb(63, 83, 217);
+        font-size: 13px;
+        font-family: $mediumFont;
+        margin: 0px 0px 10px!important;
+        @media (max-width: $lg) {
+            font-size: 12px;
+        }
+
+        @media (max-width: $sm) {
+            font-size: 13px;
+        }
+    }
+
+    & > span {
+        font-size: 13px;
+        margin-top: 20px;
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        @media (max-width: $lg) {
+            font-size: 12px;
+        }
+        @media (max-width: $sm) {
+            display: -webkit-box;
+            overflow : hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical; 
+            white-space: normal;
+            font-size: 13px;
+        }
+
+    }
+
+}
+
+.paginationView {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    margin-bottom: 112px;
+    @media (max-width: $lg) {
+        padding-top: 100px;
+    }
+    @media (max-width: $sm) {
+        padding-top: 40px;
+        margin-bottom: 0px;
+    }
+}
+
+.selectedPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: #0c0b31;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    margin: 0 2.5px;
+    font-size: 13px;
+    @media (max-width: $lg) {
+        font-size: 12px;
+        width: 28px;
+        height: 28px;
+    }
+    @media (max-width: $sm) {
+        font-size: 13px;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.notSelectedPage {
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: #0c0b31;
+    margin: 0px 2.5px;
+    font-size: 13px;
+    @media (max-width: $lg) {
+        font-size: 12px;
+        width: 28px;
+        height: 28px;
+        margin: 0px 5px;
+    }
+    @media (max-width: $sm) {
+        font-size: 13px;
+        width: 30px;
+        height: 30px;
+        margin: 0px 5px;
+    }
+}
+
+.descHtmlDataFromServer {
+    width: 1130px;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: $lg) {
+        width: 890px;
+    }
+    @media (max-width: $md) {
+        max-width: 890px;
+    }
+    @media (max-width: $xmd) {
+        max-width: 100%;
+    }
+    & > p {
+        direction: rtl;
+        text-align: right;
+        text-justify: inter-word;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    & > table, tr, td {
+        border: 1px solid black;
+        text-align: center;
+    }
+    & > * {
+        max-width: 100%;
+    }
+}
+
+.divider {
+    border-left: 1px solid rgba(12, 11, 49, 0.16);
+    margin: 0 13px;
+    height: 70%;
+}
+
+.dividerMain {
+    border-left: 1px solid rgba(12, 11, 49, 0.16);
+    margin: 0 13px;
+    height: 60%;
+}
+
+.noDataForDesc {
+    width: 1130px;
+    @media (max-width: $lg) {
+        width: 890px;
+    }
+    @media (max-width: $md) {
+        max-width: 890px;
+    }
+    @media (max-width: $xmd) {
+        max-width: 100%;
+    }
+    text-align: center;
+    & > img {
+        width: 30%;
+    }
+    & > p {
+        font-size: 12px;
+        margin-top: 8px;
+    }
+}

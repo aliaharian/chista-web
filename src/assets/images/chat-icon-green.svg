@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Messages_Chat.14" width="26.566" height="26.566" data-name="Messages, Chat.14" viewBox="0 0 26.566 26.566">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#34c278;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}
+        </style>
+    </defs>
+    <path id="Path_7986" fill="none" d="M0 0h26.566v26.566H0z" data-name="Path 7986"/>
+    <path id="Path_7987" d="M7.6 22.857a5.428 5.428 0 1 0-5.428-5.428" class="cls-2" data-name="Path 7987" transform="translate(.232 1.283)"/>
+    <path id="Path_7988" d="M7.626 22.338a5.421 5.421 0 0 1-2.286-.5L2 22.545l.7-3.345a5.425 5.425 0 0 1-.507-2.3" class="cls-2" data-name="Path 7988" transform="translate(.214 1.807)"/>
+    <path id="Path_7989" d="M6.617 13.086A7.325 7.325 0 0 1 6 10.147C6 5.7 9.983 2.133 14.855 2.133S23.71 5.7 23.71 10.147a7.761 7.761 0 0 1-3.541 6.4v3.149l-3.475-1.711a9.727 9.727 0 0 1-4.1-.091" class="cls-2" data-name="Path 7989" transform="translate(.641 .228)"/>
+</svg>

@@ -1,0 +1,269 @@
+$mobileSm: 480px;
+$mobile: 799px;
+$desktopSm: 1800px;
+
+.commonGroupsContainer {
+    width: calc(100% + 24px);
+    margin: 0 -12px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width: $mobile) {
+        width: 100%;
+        margin: 0;
+        margin-top: 30px;
+        padding: 0 24px;
+    }
+    & > div {
+        & > div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+}
+.commonGroupsNoData {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 96px;
+    @media (max-width: $mobileSm) {
+        margin-top: 100px;
+        margin-bottom: 83px;
+    }
+    & img {
+        width: 71px;
+    }
+    & p {
+        font-size: 13px;
+        margin-top: 40px;
+    }
+}
+.contactDetailClassItemWrapper {
+    max-width: 387px !important;
+    min-width: 387px !important;
+    padding: 0 12.5px 19px 12.5px;
+
+    @media (max-width: $desktopSm) {
+        padding: 0 9.5px 19px 9.5px;
+        max-width: 306px !important;
+        min-width: 306px !important;
+    }
+    @media (max-width: 1200px) {
+        min-width: 50% !important;
+        max-width: 306px !important;
+        padding: 0 9.5px !important;
+        padding-bottom: 18px !important;
+    }
+    @media (max-width: 880px) {
+        min-width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        padding-bottom: 18px !important;
+    }
+    @media (max-width: $mobile) {
+        min-width: 100% !important;
+        max-width: 306px !important;
+        padding: 0 !important;
+        padding-bottom: 18px !important;
+    }
+    & > div {
+        padding: 30px;
+        // padding-bottom: 36px;
+        border: 1px solid var(--textColorBorder);
+        border-radius: 10px;
+        transition: all 0.25 ease;
+        width: 362px;
+        max-width: 362px;
+        min-width: 362px;
+        @media (max-width: $desktopSm) {
+            max-width: 287px !important;
+            min-width: 287px !important;
+        }
+        @media (max-width: 1200px) {
+            max-width: calc(100%) !important;
+            min-width: calc(100%) !important;
+        }
+        @media (max-width: $mobile) {
+            min-width: 100% !important;
+            max-width: 287px !important;
+        }
+        &:hover {
+            border: 1px solid var(--buttonColorNormal);
+            // box-shadow: 0 3px 6px rgba(0, 0, 0, 0.17);
+        }
+        @media (max-width: $mobile) {
+            padding: 30px;
+        }
+    }
+}
+
+.contactDetailClassItemCardBody {
+    margin-bottom: 0;
+    cursor: pointer;
+    @media (max-width: $mobile) {
+        height: 106px;
+    }
+}
+.contactDetailGroupInfoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.contactDetailGroupAvatarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contactDetailClassAvatar {
+    width: 48px;
+    height: 48px;
+    font-size: 16px;
+    border-radius: 50%;
+    & svg {
+        font-size: 22;
+    }
+}
+
+.borderNone {
+    border: none !important;
+}
+.contactDetailClassAvatarBorder {
+    width: 48px;
+    height: 48px;
+    border-radius: 100px;
+    padding: 0px;
+    position: relative;
+    @media (max-width: $desktopSm) {
+        width: 45px;
+        height: 45px;
+    }
+    @media (max-width: $mobile) {
+        width: 48px;
+        height: 48px;
+    }
+    & > div {
+        width: 48px;
+        height: 48px;
+        @media (max-width: $desktopSm) {
+            width: 45px;
+            height: 45px;
+        }
+        @media (max-width: $mobile) {
+            width: 48px;
+            height: 48px;
+        }
+    }
+}
+.contactDetailGroupName {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 11px;
+    & > p {
+        max-width: 190px;
+        font-size: 13px;
+        margin: 0;
+        @media (max-width: $desktopSm) {
+            font-size: 12px;
+        }
+        @media (max-width: $mobileSm) {
+            font-size: 13px;
+        }
+    }
+    & > p:first-child {
+        font-family: var(--fontMedium);
+        color: var(--textColorPrimary);
+    }
+}
+
+.contactDetailGroupActions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.contactDetailGroupMembers {
+    margin-top: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $mobile) {
+        margin-top: 30px;
+    }
+}
+.contactDetailMemberCnt {
+    font-size: 13px;
+    line-height: 18px;
+    @media (max-width: $desktopSm) {
+        font-size: 12px;
+    }
+    @media (max-width: $mobileSm) {
+        font-size: 13px;
+    }
+}
+.contactDetailActionClass {
+    & > p {
+        font-size: 13px;
+        margin: 0;
+        line-height: 30px;
+        @media (max-width: $desktopSm) {
+            font-size: 12px;
+        }
+        @media (max-width: $mobileSm) {
+            font-size: 13px;
+        }
+    }
+}
+.contactDetailLoginClass {
+    all: unset;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #fff;
+    color: var(--buttonColorNormal);
+    border: 1px solid var(--buttonColorNormal);
+    height: 30px;
+    width: 70px;
+    box-sizing: border-box;
+    padding: 10px 14px;
+    padding-right: 9px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    transition: all 0.3s ease-in-out;
+    @media (max-width: $desktopSm) {
+        font-size: 12px;
+        height: 28px;
+        width: 67px;
+    }
+    @media (max-width: $mobileSm) {
+        font-size: 13px;
+        height: 30px;
+        width: 70px;
+    }
+    & svg {
+        font-size: 20px;
+    }
+    &:hover {
+        background-color: var(--buttonColorNormal);
+        color: #fff;
+    }
+}
+.chatIcon {
+    width: 20px;
+    height: 20;
+}

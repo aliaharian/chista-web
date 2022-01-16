@@ -1,0 +1,16 @@
+<svg id="Business_Chart.4" data-name="Business, Chart.4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:rgba(12,11,49,.8);stroke-linecap:round;stroke-linejoin:round;stroke-width:1.75px}
+        </style>
+    </defs>
+    <g id="Group_10883" data-name="Group 10883">
+        <path id="Path_13642" data-name="Path 13642" class="cls-1" d="M3 9V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-6"/>
+        <path id="Path_13643" data-name="Path 13643" class="cls-1" d="m9 20-.251-.63a2.3 2.3 0 0 0-.576-.839h0a2.308 2.308 0 0 0-1.573-.615H4.4a2.311 2.311 0 0 0-1.569.615h0a2.3 2.3 0 0 0-.576.839L2 20"/>
+        <path id="Path_13644" data-name="Path 13644" class="cls-1" d="M6.737 12.513a1.75 1.75 0 1 1-2.475 0 1.751 1.751 0 0 1 2.475 0"/>
+        <path id="Path_13645" data-name="Path 13645" class="cls-1" d="M11 15V9"/>
+        <path id="Path_13646" data-name="Path 13646" class="cls-1" d="M14 15v-3.32"/>
+        <path id="Path_13647" data-name="Path 13647" class="cls-1" d="M17 15V9.55"/>
+    </g>
+    <path id="Path_13648" data-name="Path 13648" d="M0 0h24v24H0z" style="fill:none"/>
+</svg>

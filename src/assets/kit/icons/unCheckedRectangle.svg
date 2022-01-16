@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_16957" data-name="Group 16957" transform="translate(0.001)">
+    <rect id="Rectangle_7915" data-name="Rectangle 7915" width="24" height="24" rx="4" transform="translate(-0.001)" fill="#ebebef"/>
+    <g id="Read_Circle" data-name="Read, Circle" transform="translate(4.461 4.462)">
+      <path id="Path_6153" data-name="Path 6153" d="M0,0H15V15H0Z" fill="none"/>
+      <path id="Arrow1.7_-_Copy" data-name="Arrow1.7 - Copy" d="M9.563,3.253l-.414-.319a.318.318,0,0,0-.442.054l-4.639,5.9a.279.279,0,0,1-.419.028l-1.9-1.84a.319.319,0,0,0-.446.005l-.366.372a.311.311,0,0,0,.005.441l2.822,2.735a.278.278,0,0,0,.419-.028L9.618,3.69a.312.312,0,0,0-.055-.438Z" transform="translate(2.514 0.429)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg id="Delivery_Check_List" data-name="Delivery, Check, List" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="Group_14003" data-name="Group 14003" transform="translate(8.12 3.165)">
+    <path id="Path_20432" data-name="Path 20432" d="M13,18h6.33" transform="translate(7.045 16.271)" fill="none" stroke="#3f53d9" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_29015" data-name="Path 29015" d="M13,18h6.33" transform="translate(-5.615 16.271)" fill="none" stroke="#3f53d9" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_20433" data-name="Path 20433" d="M13,10h6.33" transform="translate(7.045 7.679)" fill="none" stroke="#3f53d9" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_29013" data-name="Path 29013" d="M13,10h6.33" transform="translate(-5.615 7.679)" fill="none" stroke="#3f53d9" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_20435" data-name="Path 20435" d="M13,14h6.33" transform="translate(7.045 11.991)" fill="none" stroke="#3f53d9" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_29014" data-name="Path 29014" d="M13,14h6.33" transform="translate(-5.615 11.991)" fill="none" stroke="#3f53d9" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_20436" data-name="Path 20436" d="M29.32,4h8.44V41.34H8.22c-.856,0-4.22-.248-4.22-.248V4h8.44" transform="translate(-4 1.275)" fill="none" stroke="#050038" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Path_29337" data-name="Path 29337" d="M8,6.747,11.086,2.89A2.375,2.375,0,0,1,12.94,2h9.113a2.375,2.375,0,0,1,1.854.89L26.99,6.747h0v4.747H8V6.747Z" transform="translate(-0.615 -2)" fill="#3f53d9"/>
+  </g>
+  <path id="Path_20437" data-name="Path 20437" d="M0,0H50V50H0Z" fill="none"/>
+</svg>

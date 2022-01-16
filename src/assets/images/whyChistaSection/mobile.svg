@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Mobile_Devices.1" width="68" height="68" viewBox="0 0 68 68">
+    <defs>
+        <style>
+            .cls-1,.cls-2{fill:none}.cls-2{stroke:#0c0b31;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px}
+        </style>
+    </defs>
+    <path id="Path_17603" d="M0 0h68v68H0z" class="cls-1"/>
+    <path id="Path_17604" d="M0 0h68v68H0z" class="cls-1"/>
+    <path id="Path_17605" d="M35.646 24.5H4.833A2.834 2.834 0 0 1 2 21.667v-2.834A2.834 2.834 0 0 1 4.833 16h30.813" class="cls-2" transform="translate(3.667 29.333)"/>
+    <path id="Path_17606" d="M51.167 8.667A5.665 5.665 0 0 0 45.5 3H8.667A5.665 5.665 0 0 0 3 8.667v31.166" class="cls-2" transform="translate(5.5 5.5)"/>
+    <path id="Path_17608" d="M20 13.5V5" class="cls-2" transform="translate(36.667 9.167)"/>
+    <path id="Path_18640" fill="#bdc9ff" stroke="#3f53d9" stroke-linecap="round" stroke-linejoin="round" stroke-width="4px" d="M19.542 8h11.687a5.665 5.665 0 0 1 5.671 5.667v25.5a5.665 5.665 0 0 1-5.667 5.667H19.542a5.665 5.665 0 0 1-5.667-5.667v-25.5A5.665 5.665 0 0 1 19.542 8z" transform="translate(25.438 14.667)"/>
+    <path id="Path_18641" fill="none" stroke="#3f53d9" stroke-linecap="round" stroke-linejoin="round" stroke-width="4px" d="M17.06 18.75h4.958" transform="translate(31.277 34.375)"/>
+</svg>

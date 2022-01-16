@@ -1,0 +1,809 @@
+$xs: 0px;
+$sm: 480px;
+$md: 800px;
+$lg: 1200px;
+$xl: 1800px;
+$lightFont: chistaYekanL;
+$mediumFont: chistayekanM;
+$regularFont: chistayekanR;
+$boldFont: chistayekanB;
+$inputRadius: 8px;
+$warmBlue: #3F53D9;
+$red: #FF6575;
+$darkIndigo15: rgba(12, 11, 49, 0.15);
+$darkIndigo16: rgba(12, 11, 49, 0.16);
+$darkIndigo3:  rgba(12, 11, 49, 0.3);
+$darkIndigo5:  rgba(12, 11, 49, 0.5);
+$darkIndigo8:  rgba(12, 11, 49, 0.8);
+
+:export {
+    xs: $xs;
+    sm: $sm;
+    md: $md;
+    lg: $lg;
+    xl: $xl;
+    lightFont: $lightFont;
+    mediumFont: $mediumFont;
+    regularFont: $regularFont;
+    boldFont:  $boldFont;
+    inputRadius: $inputRadius;
+    warmBlue: $warmBlue;
+    red: $red;
+    darkIndigo15: $darkIndigo15;
+    darkIndigo16:  $darkIndigo16;
+    darkIndigo3: $darkIndigo3;
+    darkIndigo5: $darkIndigo5;
+}
+
+//main layout without sidebar:
+.layoutWithoutSidebarContainer {
+    max-width: 1400px;
+    margin: 0px auto;
+    @media (max-width: $xl) {
+        max-width: 1119px;
+    }
+    @media (max-width: $lg) {
+        max-width: 100%;
+        padding: 0px 34px;
+    }
+    @media (max-width: $sm) {
+        max-width: 100%;
+        padding: 0px 24px;
+    }
+}
+
+//main layout with sidebar:
+.layoutWithSidebarContainer {
+    max-width: 1400px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 152px 1136px;
+    column-gap: 112px;
+    @media (max-width: $xl) {
+        max-width: 1119px;
+        grid-template-columns: 140px 900px;
+        column-gap: 79px;
+    }
+    @media (max-width: $lg) {
+        max-width: 100%;
+        grid-template-columns: 13% 80%;
+        column-gap: 7%;
+        padding: 0 34px;
+    }
+    @media (max-width: $md) {
+        max-width: 100%;
+        grid-template-columns: 100%;
+        column-gap: 0px;
+        padding: 0 34px;
+    }
+    @media (max-width: $sm) {
+        max-width: 100%;
+        padding: 0px 24px;
+    }
+}
+
+//frames layout:
+.framesLayoutContainer {
+    margin: 0px auto;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 362px 362px 362px;
+    column-gap: 25px;
+    row-gap: 25px;
+    @media (max-width: $xl) {
+        grid-template-columns: 287px 287px 287px;
+        column-gap: 19px;
+        row-gap: 19px;
+    }
+    @media (max-width: $lg) {
+        width: 100%;
+        grid-template-columns: calc(33.333% - 13px) calc(33.333% - 13px) calc(33.333% - 13px);
+        column-gap: 19.5px;
+    }
+    @media (max-width: $md) {
+        grid-template-columns: calc(50% - 9.5px) calc(50% - 9.5px);
+        column-gap: 19px;
+    }
+    @media (max-width: $sm) {
+        grid-template-columns: 100%;
+        row-gap: 19px;
+        column-gap: 0px;
+    }
+}
+
+//checkbox:
+.circleCheckbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    @media (max-width: $xl) {
+        width: 17px;
+        height: 17px;
+    }
+    @media (max-width: $sm) {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.rectangleCheckbox {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    @media (max-width: $xl) {
+        width: 20px;
+        height: 20px;
+    }
+    @media (max-width: $sm) {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+//typography:
+.lineHeight {
+    line-height: 35px;
+    @media (max-width: $md) {
+        line-height: 28px;
+    }
+}
+
+.fontFamB {
+    font-family: $boldFont;
+}
+
+.fontFamL {
+    font-family: $lightFont;
+}
+
+.fontFamR {
+    font-family: $regularFont;
+}
+
+.fontFamM {
+    font-family: $mediumFont;
+}
+
+.limitText {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+//buttons:
+.disabledBtn {
+    width: 100%;
+    border: 1px solid #cdccd7;
+    color: rgba(12, 11, 39, 0.3);
+    background-color: white;
+}
+
+.disabledBtn:focus {
+    outline: none;
+}
+
+.enableWithBgColorBtn {
+    width: 100%;
+    background-color: $warmBlue;
+    border: none;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.enableWithBgColorBtn:focus {
+    outline: none;
+}
+
+.enableWithoutBgColorBtn {
+    width: 100%;
+    background-color: white;
+    border: 1px solid $warmBlue;
+    color: $warmBlue;
+    text-align: center;
+    cursor: pointer;
+}
+
+.enableWithoutBgColorBtn:focus {
+    outline: none;
+}
+
+.chistaButtonWithLabelContainer {
+    & > .titleTexts {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        & > div {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            & > p {
+                margin: 0px 0px 14px;
+                font-size: 13px;
+                @media (max-width: $xl) {
+                    font-size: 12px;
+                }
+                @media (max-width: $lg) {
+                    font-size: 13px;
+                }
+            }
+            & > .requireFieldMark {
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background-color: $red;
+                margin-right: 5px;
+            }
+            & > .errorText {
+                color: $red;
+                font-size: 13px;
+                @media (max-width: $xl) {
+                    font-size: 12px;
+                }
+                @media (max-width: $lg) {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+.btn_height58 {
+    height: 58px;
+    border-radius: 29px;
+    font-size: 14px;
+    & > img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.btn_height48_A {
+    height: 48px;
+    border-radius: 24px;
+    font-size: 13px;
+    & > img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.btn_height48_B {
+    height: 48px;
+    border-radius: 8px;
+    font-size: 13px;
+    & > img {
+        width: 24px;
+        height: 24px;
+    }
+    @media (max-width: $xl) {
+        font-size: 12px;
+        & > img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    @media (max-width: $sm) {
+        font-size: 13px;
+        & > img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+.btn_height40 {
+    height: 40px;
+    border-radius: 20px;
+    font-size: 12px;
+    & > img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.btn_height30 {
+    height: 30px;
+    border-radius: 15px;
+    font-size: 13px;
+    & > img {
+        width: 24px;
+        height: 24px;
+    }
+    @media (max-width: $xl) {
+        height: 26px;
+        border-radius: 13px;
+        font-size: 12px;
+        & > img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    @media (max-width: $sm) {
+        height: 30px;
+        border-radius: 15px;
+        font-size: 13px;
+        & > img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+.btn_height52 {
+    height: 52px;
+    border-radius: 8px;
+    font-size: 13px;
+    & > img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.btn_height56 {
+    height: 56px;
+    border-radius: 8px;
+    font-size: 13px;
+    & > img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+// divider:
+.verticalDivider {
+    width: 1px;
+    height: 100%;
+    background-color: $darkIndigo16;
+}
+
+.horizontalDivider {
+    height: 1px;
+    width: 100%;
+    background-color: $darkIndigo16;
+}
+
+//inputs:
+.textFieldContainer {
+    width: 394px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media (max-width: $xl) {
+        width: 326px;
+    }
+    @media (max-width: $lg) {
+        width: 312px;
+    }
+    @media (max-width: $sm) {
+        width: 100%;
+    }
+    & > .titleTexts {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        & > div {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            & > p {
+                margin: 0px 0px 14px;
+                font-size: 13px;
+                @media (max-width: $xl) {
+                    font-size: 12px;
+                }
+                @media (max-width: $lg) {
+                    font-size: 13px;
+                }
+            }
+            & > .requireFieldMark {
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background-color: $red;
+                margin-right: 5px;
+            }
+            & > .errorText {
+                color: $red;
+                font-size: 13px;
+                @media (max-width: $xl) {
+                    font-size: 12px;
+                }
+                @media (max-width: $lg) {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    & .inputContainerWithoutError {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        background-color: white;
+        border-radius: $inputRadius;
+        border: 1px solid $darkIndigo15;
+        padding: 10px 12px;
+        & > img {
+            width: 24px;
+            height: 24px;
+        }
+        & > input {
+            width: calc(100% - 32px);
+            border: none;
+            height: 24px;
+            font-size: 13px;
+            font-family: $regularFont;
+            @media (max-width: $xl) {
+                font-size: 12px;
+            }
+            @media (max-width: $lg) {
+                font-size: 13px;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        & > span {
+            color: rgba(12, 11, 49, 0.5);
+            font-size: 12px;
+            direction: ltr;
+            line-height: 24px;
+        }
+    }
+    & .inputContainerWithError {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        background-color: white;
+        border-radius: $inputRadius;
+        border: 1px solid $red;
+        padding: 10px 12px;
+        & > img {
+            width: 24px;
+            height: 24px;
+        }
+        & > input {
+            width: calc(100% - 32px);
+            border: none;
+            height: 24px;
+            font-family: $regularFont;
+            &:focus {
+                outline: none;
+            }
+        }
+        & > span {
+            color: rgba(12, 11, 49, 0.5);
+            font-size: 12px;
+            direction: ltr;
+            line-height: 24px;
+        }
+    }
+    & > .errorText {
+        margin: 10px 0px 0px;
+        color: $red;
+        font-size: 13px;
+    }
+}
+.searchInput_height40_gray {
+    height: 40px;
+    border-radius: 20px;
+    border: solid 1px #cdccd7;
+    background-color: #f5f5f7;
+    & > div {
+        width: 24px;
+        height: 24px;
+        & > img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    & > img {
+        width: 24px;
+        height: 24px;
+    }
+    & > input {
+        width: calc(100% - 74px);
+        font-size: 13px;
+        background-color: #f5f5f7;
+        font-family: $regularFont;
+        border: none;
+    }
+}
+.searchInput_height40_gray_twoIcon {
+    height: 40px;
+    border-radius: 20px;
+    border: solid 1px #cdccd7;
+    background-color: #f5f5f7;
+    & > div {
+        width: 24px;
+        height: 24px;
+        & > img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    & > img {
+        width: 24px;
+        height: 24px;
+    }
+    & > input {
+        width: calc(100% - 108px);
+        font-size: 13px;
+        background-color: #f5f5f7;
+        font-family: $regularFont;
+    }
+}
+
+.searchInput_height35_gray {
+    height: 35px;
+    border-radius: 18px;
+    border: solid 1px #cdccd7;
+    background-color: #f5f5f7;
+    & > div {
+        width: 20px;
+        height: 20px;
+        & > img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    & > img {
+        width: 20px;
+        height: 20px;
+    }
+    & > input {
+        width: calc(100% - 74px);
+        font-size: 12px;
+        background-color: #f5f5f7;
+        font-family: $regularFont;
+    }
+}
+
+.searchInput_height35_gray_twoIcon {
+    height: 35px;
+    border-radius: 18px;
+    border: solid 1px #cdccd7;
+    background-color: #f5f5f7;
+    & > div {
+        width: 20px;
+        height: 20px;
+        & > img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    & > img {
+        width: 20px;
+        height: 20px;
+    }
+    & > input {
+        width: calc(100% - 108px);
+        font-size: 12px;
+        background-color: #f5f5f7;
+        font-family: $regularFont;
+    }
+}
+
+.textareaContainer {
+    width: 394px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media (max-width: $xl) {
+        width: 326px;
+    }
+    @media (max-width: $lg) {
+        width: 312px;
+    }
+    @media (max-width: $sm) {
+        width: 100%;
+    }
+    & > .titleTexts {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        & > div {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            & > p {
+                margin: 0px 0px 14px;
+                font-size: 13px;
+                @media (max-width: $xl) {
+                    font-size: 12px;
+                }
+                @media (max-width: $lg) {
+                    font-size: 13px;
+                }
+            }
+            & > .requireFieldMark {
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background-color: $red;
+                margin-right: 5px;
+            }
+            & > .errorText {
+                color: $red;
+                font-size: 13px;
+                @media (max-width: $xl) {
+                    font-size: 12px;
+                }
+                @media (max-width: $lg) {
+                    font-size: 13px;
+                }
+            }
+            & > .hintText {
+                font-size: 12px;
+                color: $darkIndigo5;
+            }
+        }
+    }
+    & > textarea::placeholder {
+        color: $darkIndigo3;
+        font-size: 13px;
+        font-family: $regularFont;
+    }
+    & > .textareaWithoutError {
+        width: 100%;
+        resize: none;
+        border-radius: $inputRadius;
+        border: 1px solid $darkIndigo15;
+        padding: 10px 12px;
+        font-family: $regularFont;
+        &:focus {
+            outline: none;
+        }
+    }
+    & > .textareaWithError {
+        width: 100%;
+        border-radius: $inputRadius;
+        border: 1px solid $red;
+        padding: 10px 12px;
+        font-family: $regularFont;
+        resize: none;
+        &:focus {
+            outline: none;
+        }
+    }
+    & > .errorText {
+        margin: 10px 0px 0px;
+        color: $red;
+        font-size: 13px;
+        @media (max-width: $xl) {
+            font-size: 12px;
+        }
+        @media (max-width: $lg) {
+            font-size: 13px;
+        }
+    }
+}
+
+.chistaSearchInputContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px 0px 9px;
+    & > input {
+        border: none;
+    }
+    & > input:focus {
+        outline: none;
+    }
+}
+
+.increaseAndDecreaseContainer {
+    width: 394px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    & input{
+        text-align: center;
+        direction: ltr;
+    }
+    & > .inputContainerWithError{
+        padding: 14px 10px;
+    }
+    & > .inputContainerWithoutError{
+        padding: 15px 10px;
+    }
+    @media (max-width: $xl) {
+        width: 326px;
+    }
+    @media (max-width: $lg) {
+        width: 312px;
+    }
+    @media (max-width: $sm) {
+        width: 100%;
+    }
+    & > .increaseAndDecreaseData {
+        width: 266px;
+        height: 56px;
+        background-color: white;
+        border-radius: $inputRadius;
+        border: 1px solid $darkIndigo15;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 15px;
+        @media (max-width: $xl) {
+            width: 214px;
+            height: 48px;
+        }
+        @media (max-width: $lg) {
+            width: 200px;
+        }
+        @media (max-width: $sm) {
+            width: 100%;
+        }
+    }
+    & > button {
+        background-color: white;
+        border: 1px solid $darkIndigo15;
+        border-radius: $inputRadius;
+        width: 56px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 56px;
+        @media (max-width: $xl) {
+            width: 48px;
+            height: 48px;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+//loader:
+.progressBarContainer {
+    width: 100%;
+    height: 3px;
+    & > div {
+        height: 100%;
+        background-color: $warmBlue;
+        transition: width 2s ease-in-out,
+    }
+}
+
+//menu:
+.menuItem {
+    background-color: #fff !important;
+    z-index: 990 !important;
+    font-size: 13px !important;
+    width: 158px !important;
+    height: 43px !important;
+    margin: 0px auto !important;
+    border-radius: 4px !important;
+    & > a {
+        font-size: 13px !important;
+        text-decoration: none !important;
+        color: var(--textColorPrimary) !important;
+    }
+    &:hover {
+        background-color: rgb(245, 248, 250) !important;
+        & > a {
+            color: var(--textColorPrimary) !important;
+        }
+        background-color: $warmBlue;
+        transition: width 2s ease-in-out,
+    }
+}
+
+//errors:
+.errorBorder {
+    border-color: $red!important;
+}
+

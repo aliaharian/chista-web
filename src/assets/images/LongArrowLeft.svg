@@ -1,0 +1,8 @@
+<svg id="Arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="Group_40" data-name="Group 40" transform="translate(10 14)">
+    <path id="Path_263" data-name="Path 263" d="M5,12H33" transform="translate(-5 -2)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    <path id="Path_264" data-name="Path 264" d="M24,22,14,12" transform="translate(-14 -2)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    <path id="Path_265" data-name="Path 265" d="M24,7,14,17" transform="translate(-14 -7)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+  </g>
+  <path id="Path_266" data-name="Path 266" d="M48,0H0V48H48Z" fill="none"/>
+</svg>

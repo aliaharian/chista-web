@@ -1,0 +1,959 @@
+@use "../../../../components/Kit/Style/kits.module.scss" as master;
+// dialog styles
+.dialog {
+    @media (max-width: master.$sm) {
+        align-items: flex-end;
+    }
+}
+.root {
+    border-radius: 16px !important;
+    width: 464px !important;
+    height: 615px !important;
+    overflow: hidden;
+    padding: 17px 0px;
+    @media (max-width: master.$sm) {
+        width: 100% !important;
+        margin: 0px;
+        height: 100% !important;
+        border-radius: 0 !important;
+        padding: 0px;
+    }
+}
+.addClassHeaderWrapper {
+    height: 91px;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    justify-content: center;
+    padding: 0 35px;
+
+    @media (max-width: master.$xl) {
+        height: 75px;
+        padding: 0 30px;
+    }
+    @media (max-width: master.$sm) {
+        height: 65px;
+        padding: 0 24px;
+    }
+}
+.selectAddClassTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    height: 91px;
+    width: 100%;
+    @media (max-width: master.$xl) {
+        height: 75px;
+    }
+    @media (max-width: master.$sm) {
+        height: 65px;
+    }
+    & > div:nth-child(1) {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        @media (max-width: master.$sm) {
+        }
+    }
+    & p {
+        margin: 0px;
+        @extend .fontFamR;
+        border-radius: 14px;
+        color: var(--textColorPrimary);
+        @media (max-width: master.$xl) {
+            font-size: 12px;
+        }
+        @media (max-width: master.$sm) {
+            font-size: 13px;
+            font-family: master.$boldFont;
+        }
+    }
+    & img {
+        cursor: pointer;
+    }
+    & svg {
+        border-radius: 18px;
+        color: var(--textColorPrimary);
+        cursor: pointer;
+        margin-left: 11px;
+    }
+}
+.backBtn {
+    width: 72px;
+    height: 30px;
+    position: absolute;
+    left: 121px;
+    top: 29px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 13px;
+    @extend .fontFamM;
+    color: var(--buttonColorNormal);
+    @media (max-width: master.$xl) {
+        top: 22px;
+        left: 110px;
+        font-size: 12px;
+    }
+    @media (max-width: master.$sm) {
+        top: 18px;
+        left: 100px;
+        font-size: 13px;
+    }
+}
+.divider {
+    color: var(--textColorBorder);
+    width: calc(100%);
+    height: 1px;
+    position: absolute;
+    top: 91px;
+    right: 0px;
+    @media (max-width: master.$xl) {
+        top: 75px;
+    }
+    @media (max-width: master.$sm) {
+        top: 65px;
+    }
+}
+.stepContainer {
+    height: 100%;
+    padding: 0 35px;
+    @media (max-width: master.$xl) {
+        padding: 0 30px;
+    }
+    @media (max-width: master.$sm) {
+        padding: 0 24px;
+    }
+}
+
+//base info
+.rightSide {
+    padding: 40px 0 !important;
+
+    align-items: center;
+    margin: 10px 0 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    @media (max-width: master.$xl) and (min-width: master.$sm) {
+        margin: 0;
+
+        padding: 35px 0 !important;
+    }
+    // @media (max-width: master.$sm) {
+    //     padding: 16px 25px !important;
+    // };
+}
+.imageWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    & label {
+        cursor: pointer;
+    }
+    @media (max-width: master.$sm) {
+        border: none;
+    }
+}
+.borderWrapper {
+    border: 1px solid transparent;
+    width: 80px;
+    height: 80px;
+    border-radius: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imageUploaded {
+    position: relative;
+    &:hover {
+        & > div {
+            display: flex;
+        }
+    }
+}
+.image {
+    min-width: 80px;
+    max-width: 80px;
+    height: 80px;
+    background-color: var(--textColorFivePercent);
+    border-radius: 300px;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    border: 1px solid var(--textColorBorder);
+    justify-content: center;
+    align-items: center;
+    & > img {
+        width: 30px;
+        color: rgba(12, 11, 49, 0.5);
+    }
+    & > svg {
+        color: rgba(12, 11, 49, 0.5);
+        font-size: 30px;
+    }
+    @media (max-width: master.$xl) and (min-width: master.$sm) {
+        min-width: 67px;
+        max-width: 67px;
+        height: 67px;
+        & > img {
+            width: 25px;
+        }
+        & > svg {
+            font-size: 25px;
+        }
+    }
+}
+.deleteIcon {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(25, 26, 37, 0.5);
+    border-radius: 300px;
+    left: 0px;
+    bottom: 0px;
+    margin: auto;
+    color: white;
+    display: none;
+    @media (max-width: master.$xl) {
+        width: 67px;
+        height: 67px;
+    }
+    @media (max-width: master.$sm) {
+        width: 80px;
+        height: 80px;
+        display: flex;
+    }
+}
+.imageBadge {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #e6e5ea;
+    border: 1px solid #fff;
+    left: 0px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: master.$xl) {
+        width: 24px;
+        height: 24px;
+    }
+    & > svg {
+        font-size: 15px;
+    }
+}
+.baseInfoContainer {
+    padding: 0px !important;
+    width: 100%;
+    & > div {
+        margin: auto;
+    }
+}
+.stepBtnContainer {
+    position: absolute;
+    top: 29px;
+    left: 35px;
+    width: 78px;
+    & > button {
+        @extend .btn_height30;
+        width: 100%;
+        @extend .fontFamM;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            background-color: var(--buttonColorHover);
+            color: #fff;
+        }
+    }
+    @media (max-width: master.$xl) {
+        width: 66px;
+        top: 22px;
+        left: 30px;
+        & > button {
+            height: 26px;
+            font-size: 12px;
+        }
+    }
+    @media (max-width: master.$sm) {
+        top: 17.5px;
+        left: 24px;
+        & > button {
+            font-size: 13px;
+            color: var(--buttonColorHover);
+            background-color: #fff;
+            &:hover {
+                background-color: #fff;
+                color: var(--buttonColorHover);
+            }
+        }
+    }
+}
+.myClassNameInput {
+    @extend .fontFamR;
+}
+
+//   add member step
+
+.errorContainer {
+    width: calc(100%);
+    margin: 0px;
+    left: 0;
+    height: 30px;
+    padding: 0 35px;
+    position: absolute;
+    top: 91px;
+    background-color: rgba(255, 101, 117, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    @media (max-width: master.$xl) {
+        width: calc(100%);
+        left: 0;
+        top: 76px;
+        padding: 0 30px;
+
+
+    }
+    @media (max-width: master.$sm) {
+        width: calc(100%);
+        left: 0;
+        top: 67px;
+        padding: 0 24px;
+
+
+    }
+    & svg {
+        height: 30px;
+        color: var(--textColorError);
+        margin-left: 5px;
+    }
+    & > p {
+        color: var(--textColorError);
+        font-size: 13px;
+    }
+}
+.addMemberMainWrapper {
+    padding: 0 !important;
+}
+.pt20{
+    padding-top:20px !important;
+}
+
+.addMemberBTNWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // flexWrap: wrap;
+    padding: 35px 0 !important;
+    @extend .fontFamR;
+    width: 100%;
+    & button:first-child {
+        padding-bottom: 29px;
+        //  @media (max-width: master.$sm) {
+        //   margin-left: 0px;
+        // };
+    }
+    @media (max-width: master.$sm) {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 0 !important;
+        & button:first-child {
+            margin-bottom: 0px;
+            padding-bottom: 35px;
+        }
+        & button {
+            border: none;
+        }
+    }
+}
+.addMemberBTN {
+    all: unset;
+    border-radius: 8px;
+    color: var(--textColorPrimary);
+    width: 100%;
+    @extend .fontFamR;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    font-size: 13px;
+    & img {
+        margin-left: 10px;
+    }
+    @media (max-width: master.$xl) and (min-width: master.$sm) {
+        font-size: 12px;
+        & img {
+            width: 20px;
+        }
+    }
+}
+.memberWrapper {
+    height: calc(100% - 130px);
+    border-top: 1px solid #ebebef;
+    width: calc(100% + 70px) !important;
+    margin: 0 -35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 290px;
+    @media (max-width: master.$xl) {
+        width: calc(100% + 60px) !important;
+        margin: 0 -30px;
+        height: 255px;
+    }
+    @media (max-width: master.$sm) {
+        // height: calc(100% - 175px);
+        height:calc(100vh - 240px);
+        width: calc(100% + 48px) !important;
+        margin: 0 -24px;
+    }
+    & > div {
+        overflow: scroll;
+        & > div {
+            margin-left: -15px;
+            margin-right: unset !important;
+            padding-top: 8px;
+            @media (max-width: master.$sm) {
+                margin-left: unset !important;
+                padding-top: 10px;
+            }
+        }
+    }
+    // margin-top: 30px;
+}
+.memberWrapperError{
+    height:310px !important;
+    @media (max-width: master.$xl) {
+        height:230px !important;
+    }
+    @media (max-width: master.$sm) {
+        height:calc(100vh - 260px) !important;
+    }
+
+}
+.itemContainer {
+    position: relative;
+    width: 100%;
+
+    & hr {
+        position: absolute;
+        right: -96px;
+        height: 1px;
+        width: 100%;
+        background-color: var(--textColorBorder);
+    }
+}
+.itemWrapper {
+    padding: 10px 20px 10px 15px;
+    margin: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    @media (max-width: master.$xl) {
+        margin: 0px;
+        padding: 10px 30px 10px 41px;
+    }
+    &:after {
+        content: "";
+        width: calc(100% - 100px);
+        height: 1px;
+        background-color: #ebebef;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        @media (max-width: master.$xl) {
+            width: calc(100% - 95px);
+        }
+        @media (max-width: master.$sm) {
+            width: calc(100% - 91px);
+        }
+    }
+    & button {
+        all: unset;
+        cursor: pointer;
+        height: 24px;
+    }
+    @media (max-width: master.$sm) {
+        margin: 0px;
+        padding: 10px 24px;
+    }
+}
+.noMember {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    color: var(--textColorSecondary);
+    @media (max-width: master.$sm) {
+        height: 100%;
+    }
+}
+.disableBtn {
+    &:hover {
+        background-color: inherit !important;
+        color: rgba(12, 11, 39, 0.3) !important;
+    }
+}
+
+//setting step
+.settingWrapper {
+}
+.addClassHeaderSetting {
+    padding: 40px 0 0 0 !important;
+    margin-bottom: 40px;
+    @media (max-width: master.$xl) {
+        padding: 30px 0 0 0 !important;
+    }
+}
+
+.classImageWrapper {
+    flex-direction: row;
+    border: none;
+    justify-content: flex-start;
+    padding: 0px;
+}
+.classBorderWrapper {
+    width: 48px;
+    height: 48px;
+}
+.classImage {
+    width: 60px;
+    height: 60px;
+    max-width: 60px;
+    min-width: 60px;
+}
+.memebrAvatarClassSetting {
+    width: 60px !important;
+    height: 60px !important;
+    font-size: 14px !important;
+    border-radius: 50% !important;
+    @extend .fontFamM;
+    @media (max-width: master.$xl) {
+        width: 50px !important;
+        height: 50px !important;
+    }
+    @media (max-width: master.$xl) {
+        width: 56px !important;
+        height: 56px !important;
+    }
+}
+.memebrAvatarBorder {
+    border: 1px solid transparent;
+    border-radius: 100px;
+    padding: 0px;
+    position: relative;
+}
+.classTitle {
+    margin-right: 15px;
+    @media (max-width: master.$xl) {
+        margin-right: 10px;
+    }
+    & p:first-child {
+        @extend .fontFamM;
+        font-size: 14px;
+        margin: 0px;
+        margin-bottom: 5px;
+        color: var(--textColorPrimary);
+        line-height: 22px;
+        @media (max-width: master.$xl) and (min-width: master.$sm) {
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+    & p:last-child {
+        font-size: 13px;
+        color: var(--textColorSecondary);
+        text-align: right;
+        margin: 0px;
+        line-height: 18px;
+        @media (max-width: master.$xl) and (min-width: master.$sm) {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+}
+.addClassSettingContainer {
+    margin-top: 24px;
+    @media (max-width: master.$xl) {
+        margin-top: 22px;
+    }
+    @media (max-width: master.$sm) {
+        margin-top: 11px;
+    }
+}
+.settingItemContainer {
+    width: 100%;
+}
+.settingItem {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 0px;
+    cursor: pointer;
+    position: relative;
+    height: 80px;
+    @media (max-width: master.$xl) {
+        height: 73px;
+    }
+    @media (max-width: master.$sm) {
+        height: 92px;
+    }
+    &:after {
+        content: "";
+        bottom: 0px;
+        width: calc(100% - 5px);
+        background-color: #ebebef;
+        height: 1px;
+        position: absolute;
+        left: -35px;
+        @media (max-width: master.$xl) {
+            left: -30px;
+        }
+        @media (max-width: master.$sm) {
+            left: -24px;
+            width: calc(100% - 9px);
+        }
+    }
+    @media (max-width: master.$sm) {
+        // padding: 21px 9px;
+    }
+    & svg:first-child {
+        margin-left: 15px;
+        color: var(--textColorPrimary);
+        @media (max-width: master.$xl) and (min-width: master.$sm) {
+            font-size: 20px;
+        }
+    }
+    & img:first-child {
+        margin-left: 15px;
+        @media (max-width: master.$xl) and (min-width: master.$sm) {
+            width: 20px;
+        }
+    }
+    & img:last-child {
+        cursor: pointer;
+    }
+    & > div:first-child {
+        display: flex;
+        align-items: center;
+    }
+    & > div:last-child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & > svg {
+            margin-left: 0px;
+            color: var(--textColorPrimary);
+        }
+    }
+}
+.inviteWrapper {
+    padding: 21px 0 21px 0 !important;
+ 
+    @media (max-width: master.$sm) {
+        font-size: 13px !important;
+    }
+}
+.userContWrapper{
+    &:after {
+        display: none;
+    }
+}
+.inviteLinkContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    & > p {
+        font-size: 13px;
+        @media (max-width: master.$xl) and (min-width: master.$sm) {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+}
+
+.settingInput {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    & > span:first-child {
+        color: var(--textColorSecondary);
+        font-size: 13px;
+        @media (max-width: master.$xl) and (min-width: master.$sm) {
+            font-size: 12px;
+            line-height: 16px;
+            margin-bottom: 10px;
+        }
+    }
+    & > span:last-child {
+        color: var(--textColorPrimary);
+        font-size: 13px;
+        @extend .fontFamR;
+        @media (max-width: master.$xl) and (min-width: master.$sm) {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+}
+.validationMessage {
+    color: var(--textColorError);
+}
+.switchContainer {
+    width: 100%;
+    justify-content: space-between !important;
+    & > span {
+        width: 47px !important;
+        padding-left: 0 !important;
+    }
+    & label{
+        margin-left:-19px !important;
+    }
+}
+.checkboxContainer {
+    position: absolute;
+    z-index: 4;
+    bottom: 3px;
+}
+.radioContainer {
+    position: absolute;
+    z-index: 4;
+    bottom: -1px;
+}
+.cursorPointer {
+    cursor: pointer;
+}
+
+//done modal
+.modalWrapper {
+    border-radius: 16px !important;
+    width: 464px !important;
+    height: 495px !important;
+    padding-left: 35px !important;
+    padding-right: 35px !important;
+    @media (max-width: master.$xl) {
+        width: 386px !important;
+        height: 421px !important;
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+    @media (max-width: master.$sm) {
+        height: 100% !important;
+        max-height: 100% !important;
+        border-radius: 0 !important;
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+}
+.modalTitle {
+    @media (max-width: master.$sm) {
+        height: 65px;
+        padding: 17.5px 24px;
+    }
+}
+.modalTop {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    & > div:nth-child(2) {
+        width: 24px;
+        height: 24px;
+    }
+}
+.succesWrapper {
+    background-color: var(--textColorSuccessAlt);
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto 30px auto;
+    @media (max-width: master.$xl) {
+        width: 67px;
+        height: 67px;
+        margin: 0px auto 20px auto;
+    }
+    & img {
+        width: 45px;
+        height: 45px;
+        @media (max-width: master.$xl) {
+            width: 37px;
+            height: 37px;
+        }
+    }
+}
+.successText {
+    font-size: 14px;
+    line-height: 19px;
+    color: #0b0c31;
+    @extend .fontFamB;
+    text-align: center;
+    margin-bottom: 52px;
+    @media (max-width: master.$xl) {
+        font-size: 13px;
+        line-height: 18px;
+        margin-bottom: 40px;
+    }
+}
+
+.linkWrapper {
+    & > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        & button {
+            all: unset;
+            cursor: pointer;
+            position: absolute;
+            color: var(--textColorSecondary);
+        }
+        & button:first-child {
+            margin-right: 16px;
+            right: 0;
+            border-radius: 8px;
+            top: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media (max-width: master.$xl) {
+                top: 12px;
+            }
+            & svg {
+                color: var(--textColorPrimary);
+
+                &:hover {
+                    color: var(--buttonColorHover);
+                }
+            }
+        }
+        & textarea,
+        & input {
+            border: 1px solid var(--textColorBorder);
+            height: 56px;
+            border-radius: 8px;
+            width: 100%;
+            outline: none;
+            padding: 16px 45px 16px 16px;
+            direction: ltr;
+            @extend .fontFamR;
+            font-size: 13px;
+            text-align: right;
+            @media (max-width: master.$xl) {
+                height: 48px;
+            }
+            @media (max-width: master.$sm) {
+                height: 48px;
+            }
+        }
+    }
+}
+.shareSocial {
+    margin-top: 8px;
+    display: flex;
+    justify-content: flex-end !important;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+    @media (max-width: master.$sm) {
+        margin-bottom: 250px;
+    }
+    & > a {
+        cursor: pointer;
+        width: 48px;
+        height: 48px;
+        border-radius: 8px;
+        margin-right: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: master.$xl) {
+            width: 42px;
+            height: 42px;
+        }
+        & > img {
+            width: 48px;
+            height: 48px;
+            @media (max-width: master.$xl) {
+                width: 42px;
+                height: 42px;
+            }
+        }
+    }
+}
+.closeCreateClassIcon {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+}
+.loginClassBtn {
+    width: 100%;
+    & > button {
+        @extend .btn_height52;
+        @extend .fontFamM;
+        background-color: var(--buttonColorNormal);
+        color: #fff;
+        @media (max-width: master.$xl) {
+            height: 48px !important;
+        }
+    }
+}
+
+//countModal
+.countModalBody {
+    margin-top: 122px;
+    padding: 0 35px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: master.$xl) {
+        padding: 0 30px !important;
+    }
+    @media (max-width: master.$sm) {
+        padding: 0 24px !important;
+    }
+}
+
+.editNameModalBody{
+    margin-top: 50px;
+    padding: 0 35px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: master.$xl) {
+        padding: 0 30px !important;
+    }
+    @media (max-width: master.$sm) {
+        padding: 0 24px !important;
+    }
+}
+.countModalInputWrapper{
+    max-width: 266px;
+    height:56px;
+    @media (max-width: master.$xl) {
+        max-width: 220px;
+        height:48px;
+    }
+    @media (max-width: master.$sm) {
+        max-width: 100%;
+    }
+}

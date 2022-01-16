@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Search_Loupe" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#2a2f33;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}
+        </style>
+    </defs>
+    <path id="Path_6379" fill="none" d="M0 0h24v24H0z"/>
+    <path id="Path_6380" d="M15.714 6.838a6.276 6.276 0 1 1-8.876 0 6.276 6.276 0 0 1 8.876 0" class="cls-2"/>
+    <path id="Path_6381" d="M19 19l-3.29-3.29" class="cls-2"/>
+</svg>

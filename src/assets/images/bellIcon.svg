@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Bell_Notifications" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#2a2f33;stroke-width:1.5px;stroke-linecap:round;stroke-linejoin:round}
+        </style>
+    </defs>
+    <g id="Group_328" transform="translate(5 3)">
+        <path id="Path_3967" fill="none" stroke="#2a2f33" stroke-width="1.5px" d="M16 11a4 4 0 0 1-4-4 4.061 4.061 0 0 1 4-4 4 4 0 0 1 0 8" transform="translate(-5 -3)"/>
+        <path id="Path_3968" d="M13.6 21h-3.2" class="cls-2" transform="translate(-5 -3)"/>
+        <path id="Path_3969" d="M12.133 6H12a5 5 0 0 0-5 5v2.5a.855.855 0 0 1-.472.764l-.5.251A1.857 1.857 0 0 0 5 16.178a1.854 1.854 0 0 0 1.854 1.854h10.292A1.854 1.854 0 0 0 19 16.178a1.854 1.854 0 0 0-1.025-1.658l-.5-.251A.857.857 0 0 1 17 13.5v-2.629" class="cls-2" transform="translate(-5 -3)"/>
+    </g>
+    <path id="Path_3972" fill="none" d="M0 0h24v24H0z"/>
+</svg>

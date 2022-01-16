@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Stop_Sign_Circle" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#2a2f33;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}
+        </style>
+    </defs>
+    <path id="Path_6865" fill="none" d="M0 0h24v24H0z"/>
+    <path id="Path_6866" d="M18.364 5.636a9 9 0 1 1-12.728 0 9 9 0 0 1 12.728 0" class="cls-2"/>
+    <path id="Path_6867" d="M6.826 11.539a1.412 1.412 0 0 1 1.9.094l.868.867V9a2 2 0 0 1 2.632-1.9l2.8.934a2 2 0 0 1 1.368 1.9v4.1a3.45 3.45 0 0 1-3.45 3.45h-1.628A3.451 3.451 0 0 1 8.554 16.1L6.59 13.479a1.413 1.413 0 0 1 .236-1.94z" class="cls-2"/>
+</svg>

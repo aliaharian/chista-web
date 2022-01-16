@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__Wallet" width="17" height="17" viewBox="0 0 17 17">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:none;stroke:#1a172d;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}
+        </style>
+    </defs>
+    <path id="prefix__Path_8414" d="M0 0h17v17H0z" data-name="Path 8414" style="fill:none"/>
+    <path id="prefix__Path_8415" d="M18.833 14.333h-1.416A1.416 1.416 0 0 1 16 12.917a1.416 1.416 0 0 1 1.417-1.417h1.417a.709.709 0 0 1 .708.708v1.417a.709.709 0 0 1-.709.708z" class="prefix__cls-2" data-name="Path 8415" transform="translate(-4.667 -3.354)"/>
+    <path id="prefix__Path_8416" d="M15.042 9.167V7.042a1.416 1.416 0 0 0-1.417-1.417H4.063A1.063 1.063 0 0 1 3 4.563 1.063 1.063 0 0 1 4.063 3.5h8.854" class="prefix__cls-2" data-name="Path 8416" transform="translate(-.875 -1.021)"/>
+    <path id="prefix__Path_8417" d="M15.042 12.438v2.125a1.416 1.416 0 0 1-1.417 1.417H4.417A1.416 1.416 0 0 1 3 14.563V5" class="prefix__cls-2" data-name="Path 8417" transform="translate(-.875 -1.458)"/>
+</svg>

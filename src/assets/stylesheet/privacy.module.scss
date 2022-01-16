@@ -1,0 +1,213 @@
+@use '../../components/Kit/Style/kits.module.scss' as master;
+
+.privacyHeader {
+  width: 100%;
+  height: 314px;
+  background-color: var(--darkBg);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  @media (max-width: master.$md) {
+    height: 160px;
+  }
+  & > h2 {
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+    max-width: 1679px;
+    padding: 0 140px;
+    font-size: 24px;
+    width: 100%;
+    @media (max-width: master.$xl) {
+      max-width: 1119px;
+      padding: 0;
+    }
+    @media (max-width: 1200px) {
+      max-width: 100%;
+      padding: 0 34px;
+    }
+    @media (max-width: master.$md) {
+      max-width: 100%;
+      padding: 0 24px;
+    }
+  }
+}
+
+.sidebar {
+  padding: 100px 0 140px 0;
+  min-width:152px;
+  & > h1 {
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--textColorPrimary);
+    margin-bottom: 20px;
+    @extend .fontFamB;
+  }
+  & > p {
+    font-size: 13px;
+    color: var(--textColorPrimary);
+    margin-bottom: 50px;
+    line-height: 35px;
+    @media (max-width: master.$md) {
+      line-height: 28px;
+    }
+  }
+
+  @media (max-width: master.$md) {
+    padding: 70px 0 25px 0;
+  }
+  & > ul {
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 80px;
+    & .sidebarMenuItemLink {
+      cursor: pointer;
+      &:hover {
+        text-decoration: none !important;
+        & > svg {
+          color: var(--textColorPrimary);
+        }
+        & > p {
+          color: var(--textColorPrimary);
+        }
+      }
+
+      & > .sidebarMenuItem {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 20px;
+
+        &:hover {
+          & > svg {
+            color: var(--textColorPrimary);
+          }
+          & > p {
+            color: var(--textColorPrimary);
+          }
+        }
+        & > div {
+          &:hover {
+            text-decoration: none !important;
+          }
+          & > p {
+            color: var(--textColorSecondary);
+          }
+          & > svg {
+            color: var(--textColorSecondary);
+          }
+        }
+
+        & > .sidebarMenuItemIcon {
+          width: 24px;
+          margin-left: 10px;
+          color: var(--textColorSecondary);
+        }
+        & > .sidebarMenuItemText {
+          font-size: 13px;
+          color: var(--textColorSecondary);
+          line-height: 18px;
+          @media (max-width: master.$xl) {
+            font-size: 13px;
+            line-height: 18px;
+          }
+        }
+      }
+
+      & > .sidebarMenuItemActive {
+        & > p {
+          color: #3f53d9 !important;
+        }
+        & > svg {
+          color: #3f53d9 !important;
+        }
+      }
+    }
+  }
+}
+
+.content {
+  margin-top: 100px;
+  margin-bottom: 140px;
+  @media (max-width: master.$md) {
+    margin-top: 25px;
+  }
+  & h1 {
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--textColorPrimary);
+    margin-bottom: 20px;
+    @extend .fontFamB;
+    @media (max-width: master.$md) {
+      font-size: 16px;
+    }
+  }
+  & p {
+    font-size: 14px;
+    color: var(--textColorPrimary);
+    @media (max-width: master.$md) {
+      font-size: 13px;
+    }
+  }
+  & .updateTime {
+    color: var(--textColorSecondary);
+  }
+}
+.privacyContentItem {
+  margin-top: 40px;
+  scroll-margin: 80px;
+
+  & .privacyItemTitle {
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--textColorPrimary);
+    margin-bottom: 20px;
+    margin-top: 0;
+    @media (max-width: master.$md) {
+      font-size: 16px;
+    }
+  }
+
+  & .ulNoStyle {
+    padding-inline-start: 16px;
+    margin: 0;
+  }
+  & ul {
+    @media (max-width: master.$md) {
+      padding-inline-start: 16px;
+      margin: 0;
+    }
+  }
+  & li {
+    font-size: 14px;
+    color: var(--textColorPrimary);
+    line-height: 35px;
+    margin-top: 10px;
+    @media (max-width: master.$md) {
+      line-height: 28px;
+      font-size: 13px;
+    }
+  }
+  & b {
+    font-weight: normal;
+    @extend .fontFamB;
+  }
+  & p {
+    font-size: 14px;
+    color: var(--textColorPrimary);
+    line-height: 35px;
+    @media (max-width: master.$md) {
+      line-height: 28px;
+      font-size: 13px;
+    }
+  }
+  & a {
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--buttonColorNormal);
+    @media (max-width: master.$md) {
+      font-size: 13px;
+    }
+  }
+}

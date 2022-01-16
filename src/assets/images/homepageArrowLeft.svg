@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Arrow.24" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}
+        </style>
+    </defs>
+    <g id="Group_11521">
+        <path id="Path_19008" d="M5 12h14" class="cls-1"/>
+        <path id="Path_19009" d="M10 7l-5 5" class="cls-1"/>
+        <path id="Path_19010" d="M10 17l-5-5" class="cls-1"/>
+    </g>
+    <path id="Path_19011" fill="none" d="M0 0h24v24H0z"/>
+</svg>

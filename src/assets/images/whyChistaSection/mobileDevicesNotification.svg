@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Mobile_Devices_Notification" width="68" height="68" viewBox="0 0 68 68">
+    <defs>
+        <style>
+            .cls-1,.cls-3{fill:none;stroke:#0c0b31;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px}.cls-3{stroke:#4264fb}
+        </style>
+    </defs>
+    <g id="Group_12576" transform="translate(17.584 7.122)">
+        <path id="Path_18732" d="M10.12 18.5h6.438" class="cls-1" transform="translate(.905 26.709)"/>
+        <path id="Path_18733" d="M34.738 23.05v21.508a5.673 5.673 0 0 1-5.7 5.651h-17.09a5.673 5.673 0 0 1-5.7-5.651V10.651A5.673 5.673 0 0 1 11.948 5h8.461" class="cls-1" transform="translate(-6.25 2.122)"/>
+        <path id="Path_18734" fill="#bdc9ff" stroke="#4264fb" stroke-linecap="round" stroke-linejoin="round" stroke-width="4px" d="M23.57 28.14a12.82 12.82 0 1 1 12.82-12.82 12.821 12.821 0 0 1-12.82 12.82" transform="translate(2.07 -2.5)"/>
+        <path id="Path_18735" d="M15.25 5.33v9.515" class="cls-3" transform="translate(10.39 2.663)"/>
+        <path id="Path_18736" d="M14.42 7.723l2.365-2.393" class="cls-3" transform="translate(8.855 2.732)"/>
+        <path id="Path_18737" d="M14.42 8.67h4.729" class="cls-3" transform="translate(8.855 8.783)"/>
+    </g>
+    <path id="Path_18738" fill="none" d="M0 0h68v68H0z" transform="rotate(-90 34 34)"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Telegram" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#0c0b31;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}
+        </style>
+    </defs>
+    <g id="Group_951" transform="translate(2.811 5.816)">
+        <path id="Path_11645" d="M11.8 16.906l-2.07 2.009a.666.666 0 0 1-1.1-.284L7.252 14.1" class="cls-1" transform="translate(-2.811 -5.816)"/>
+        <path id="Path_11646" d="M14.1 10.927l-3.917 3.535a.843.843 0 0 0 .066 1.305l5.378 3.973a.9.9 0 0 0 1.422-.54l2.645-12.447a.775.775 0 0 0-1.037-.884L3.142 11.853a.516.516 0 0 0 .032.975L7.251 14.1" class="cls-1" transform="translate(-2.811 -5.816)"/>
+    </g>
+    <path id="Path_11647" fill="none" d="M0 0h24v24H0z" transform="rotate(-90 12 12)"/>
+</svg>

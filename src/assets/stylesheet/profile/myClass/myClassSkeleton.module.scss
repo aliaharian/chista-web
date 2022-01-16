@@ -1,0 +1,310 @@
+@use "../../../../components/Kit/Style/kits.module.scss" as master;
+
+.actionsRes {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 26px;
+    & > div {
+        height: 40px;
+        display: flex;
+        flex-basis: 500px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    & > div:nth-child(2) {
+        max-width: 110px;
+        min-width: 110px;
+        height: 40px;
+        border: 1px solid  var(--textColorBorder);
+        border-radius: 20px;
+        justify-content: center;
+    }
+}
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 45px;
+    cursor: pointer;
+    position: relative;
+    @media (max-width: master.$xl) {
+        margin-left: 19px;
+
+    }
+    @media (max-width: master.$sm) {
+        margin-left: 0px;
+        width: 100%;
+    }
+    & input {
+        height: 48px;
+        width: 48px;
+        outline: none !important;
+        pointer-events: none;
+        border: 1px solid  var(--textColorBorder);
+        transition: ease all 300ms;
+        border-radius: 24px;
+       
+    }
+}
+.searchExpandMobile {
+    justify-content: space-between;
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 13px 24px;
+    border: 1px solid  var(--textColorBorder);
+    & input {
+        border: 1px solid  var(--textColorBorder);
+        display: block;
+        width: 100%;
+        padding: 0 15px;
+        pointer-events: unset !important;
+    }
+
+    @media (max-width: master.$sm) {
+        
+        width: calc(100% - 60px);
+    }
+}
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & > div:nth-child(1) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    & > div:nth-child(2) {
+        @media (max-width: master.$sm) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-top: 3px;
+            margin-bottom: 24px;
+        }
+    }
+    & button {
+        height: 48px;
+        @media (max-width: master.$sm) {
+            // margin-bottom: 24
+        }
+        & > span {
+            & > span {
+                margin-right: 7px;
+            }
+        }
+    }
+    @media (max-width: master.$sm) {
+        flex-direction: column-reverse;
+        margin-bottom: 27px;
+    }
+}
+.searchIcon {
+    position: absolute;
+    left: 0;
+}
+.classFilterSkeleton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 170px;
+    height: 40px;
+    border: 1px solid  var(--textColorBorder);
+    border-radius: 20px;
+    padding: 13px;
+    @media (max-width: master.$xl) {
+        width: 152px;
+
+    }
+    & > div:nth-child(1) {
+        padding: 1.5px 0;
+        display: flex;
+        height: 40px;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        // &>span:{
+        //     margin-bottom:15
+        // }
+    }
+}
+.addClass {
+    width: 115px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0c0b310d;
+    border-radius: 20px;
+}
+.myClassDesktop {
+    width: calc(100%);
+    margin: 0;
+}
+.skeletonMyClassesMainContainer {
+    display: grid;
+    grid-template-columns: 362px 362px 362px;
+    column-gap: 25px;
+    row-gap: 25px;
+    margin-top: 25px;
+    @media (max-width: master.$xl) {
+        grid-template-columns: 287px 287px 287px;
+        column-gap: 19px;
+        row-gap: 19px;
+        margin-top: 19px;
+    }
+    @media (max-width: master.$lg) {
+        grid-template-columns: calc(33.3333% - 13px) calc(33.3333% - 13px) calc(33.3333% - 13px);
+        column-gap: 19.5px;
+        row-gap: 19px;
+    }
+    @media (max-width: 1000px) {
+        grid-template-columns: calc(50% - 8.5px) calc(50% - 8.5px);
+        column-gap: 17px;
+        row-gap: 19px;
+        margin-top: 19px;
+
+    }
+    @media (max-width: master.$sm) {
+        grid-template-columns: 100%;
+        column-gap: 0;
+        row-gap: 19px;
+        margin-top: 19px;
+    }
+}
+.classItemWrapper {
+    width: 100%;
+   
+    // @media (max-width: master.$xs) {
+    //     min-width: 100% !important;
+    //     max-width: 100% !important;
+    // };
+    // @media (max-width: master.$sm) {
+    //     width: 100%;
+    //     min-width: 100% !important;
+    //     max-width: 100% !important;
+    // }
+    & > div {
+        padding: 26px;
+        margin-bottom: 0;
+        border: 1px solid  var(--textColorBorder);
+        border-radius: 10px;
+        @media (max-width: master.$sm) {
+            padding: 30px;
+        }
+    }
+}
+.cardBody {
+    margin-bottom: 0px;
+   
+}
+.groupInfoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.groupAvatarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.groupName {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 11px;
+    & > p {
+        max-width: 190px;
+        margin: 0;
+    }
+}
+.groupActions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.groupMembers {
+    margin-top: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: master.$sm) {
+        margin-top: 30px;
+    }
+}
+
+.memberAvatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.enterClass {
+    width: 70px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0c0b310d;
+    border-radius: 20px;
+}
+.searchExpand {
+    justify-content: space-between;
+    width: 362px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid var(--textColorBorder);
+    padding: 13px 24px;
+    @media (max-width: master.$xl) {
+        width: 287px;
+
+    }
+    @media (max-width: master.$sm) {
+        width: 100%;
+        margin-bottom: 26;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

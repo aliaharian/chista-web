@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Trash_Delete_Bin" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#0c0b31;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}
+        </style>
+    </defs>
+    <path id="Path_7079" fill="none" d="M0 0h24v24H0z"/>
+    <path id="Path_7080"  d="M5 7h13.23" class="cls-2" transform="translate(.385 -1)"/>
+    <path id="Path_7081" d="M17.076 7v11.847A2.017 2.017 0 0 1 15.23 21H7.846A2.017 2.017 0 0 1 6 18.847V7" class="cls-2" transform="translate(.462 -.637)"/>
+    <path id="Path_7082" d="M15.462 3.75H9" class="cls-2" transform="translate(-.231 -.711)"/>
+    <path id="Path_7083" d="M10 11v5.385" class="cls-2" transform="translate(0 -.223)"/>
+    <path id="Path_7084" d="M14 11v5.385" class="cls-2" transform="translate(0 -.223)"/>
+</svg>

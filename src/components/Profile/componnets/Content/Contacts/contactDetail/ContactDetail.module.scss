@@ -1,0 +1,368 @@
+$mobileSm: 480px;
+$mobile: 799px;
+$desktopSm: 1800px;
+
+.contactDetailWrapper {
+    padding: 0;
+    max-width: 100%;
+    margin: 0px;
+    @media (max-width: $mobile) {
+        padding: 0;
+    }
+}
+.contactDetailHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: $mobile) {
+        margin-bottom: 20px;
+        padding: 0 24px;
+    }
+    @media (max-width: $mobileSm) {
+        margin-top:3px;
+    }
+}
+
+.imageWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px;
+    border-right: 1px solid #e7ecf0;
+    & label {
+        cursor: pointer;
+    }
+    @media (max-width: $mobile) {
+        border: none;
+    }
+}
+.contactDetailImageWrapper {
+    flex-direction: row;
+    border: none;
+    justify-content: flex-start;
+    padding: 0px;
+}
+.backArrow {
+    cursor: pointer;
+    margin-left: 15px;
+}
+.contactDetailAvatar {
+    width: 56px !important;
+    height: 56px !important;
+    font-size: 16px !important;
+    border-radius: 50% !important;
+    @media (max-width: $desktopSm) {
+        width: 48px !important;
+        height: 48px !important;
+    }
+}
+.contactDetailAvatarBorder {
+    border-radius: 100px;
+    padding: 2px;
+    position: relative;
+}
+.contactDetailTitle {
+    margin-right: 11px;
+    & p:first-child {
+        font-family: var(--fontMedium);
+        font-size: 13px;
+        margin-top: 0px;
+        margin-bottom: 6px;
+        color: var(--textColorPrimary);
+        @media (max-width: $desktopSm) {
+            font-size: 12px;
+        }
+        @media (max-width: $mobileSm) {
+            font-size: 13px;
+        }
+    }
+    & p:last-child {
+        font-size: 13px;
+        color: var(--textColorSecondary);
+        @media (max-width: $desktopSm) {
+            font-size: 12px;
+        }
+        @media (max-width: $mobileSm) {
+            font-size: 13px;
+        }
+    }
+    & span {
+        font-size: 13px;
+        color: #0c0b31cc;
+        @media (max-width: $desktopSm) {
+            font-size: 12px;
+        }
+        @media (max-width: $mobileSm) {
+            font-size: 13px;
+        }
+    }
+    & span:last-child {
+        font-size: 13px;
+        @media (max-width: $desktopSm) {
+            font-size: 12px;
+        }
+        @media (max-width: $mobileSm) {
+            font-size: 13px;
+        }
+    }
+}
+.contactDetailActionWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactDetailChat {
+    all: unset;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 15px;
+    background-color: var(--buttonColorNormal);
+    color: #fff;
+    border: 1px solid var(--buttonColorNormal);
+    height: 40px;
+    width: 122px;
+    box-sizing: border-box;
+    padding: 10px 14px 10px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background-color: var(--buttonColorNormal);
+        color: #fff;
+    }
+    @media (max-width: $desktopSm) {
+        height: 35px;
+        width: 110px;
+        font-size: 12px;
+        padding: 10px 16px 10px 18px;
+        & svg {
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width: $mobile) {
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        border: none;
+        padding: 0px;
+        margin-right: 0;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        &:hover {
+            background-color: var(--buttonColorNormal);
+            color: #fff;
+        }
+    }
+}
+
+.contactDetailChatIcon {
+    font-size: 24px;
+    color: #fff;
+    @media (max-width: $mobile) {
+        font-size: 20px !important;
+    }
+}
+.contactDetailShare {
+    all: unset;
+    background-color: #fff;
+    width: 40px;
+    position: relative;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.contactDetailLink {
+    font-size: 13px;
+    background-color: #fff !important;
+    z-index: 990px;
+    min-height: auto;
+    & > a {
+        text-decoration: none !important;
+        color: var(--textColorSecondary);
+        font-family: var(--fontMedium);
+        width: 100%;
+        font-size: 13px;
+
+        @media (max-width: $mobile) {
+            font-size: 12px;
+        }
+    }
+    &:hover {
+        background-color: rgb(245, 248, 250) !important;
+        & > a {
+            color: var(--textColorPrimary);
+        }
+    }
+}
+.contactDetailTabsRoot {
+}
+
+.contactDetailTabs {
+    height: 48px;
+    border-radius: 0px;
+    margin-top: 40px;
+    font-size: 13px !important;
+    position: relative;
+    @media (max-width: $mobile) {
+        padding: 0 !important;
+    }
+    // & span {
+    //     color: var(--textColorPrimary) !important;
+    // }
+
+    // & .Mui-selected {
+    //     & span {
+    //         color: var(--buttonColorPrimary) !important;
+    //     }
+    // }
+
+    &:after {
+        bottom: 1.5px;
+        right: 0px;
+        content: "";
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        display: block;
+        background-color: var(--textColorBorder);
+        @media (max-width: $mobile) {
+            width: 100vw;
+        }
+    }
+    & .MuiTabs-indicator {
+        height: 3px;
+        border-radius: 3px;
+        display: inline-block;
+        background-color: var(--buttonColorNormal);
+    }
+    @media (max-width: $mobile) {
+        margin-top: 0px;
+        border-radius: 0px;
+        border: none;
+        overflow: visible;
+    }
+    & .Mui-selected {
+        color: var(--buttonColorNormal) !important;
+        font-family: var(--fontMedium);
+    }
+    & .MuiTab-textColorPrimary {
+        color: #0c0b31;
+        font-size: 13px !important;
+    }
+    & button {
+        padding: 0 15px !important;
+        margin-right: 43px;
+        color: var(--textColorPrimary);
+        &:first-child {
+            margin-right: 0;
+            @media (max-width: $mobileSm) {
+                margin-right: 24px !important;
+
+            }
+        }
+        @media (max-width: $mobile) {
+            margin-right: 15px;
+        }
+    }
+}
+
+.contactDetailMobileHeader {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 25px;
+    & > div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    &:after {
+        content: "";
+        width: 100vw;
+        position: absolute;
+        bottom: 0;
+        left: -28px;
+        height: 1;
+        background-color: var(--textColorborder);
+    }
+}
+////////////////////////////////////////////////////////////////
+
+.contactDetailShareModalWrapper {
+    padding: 12px 11px;
+    box-sizing: border-box;
+    max-width: 380px !important;
+    min-width: 380px !important;
+    width: 380px !important;
+    overflow: unset !important;
+}
+.contactDetailShareModalTitle {
+    & h2 {
+        display: flex;
+        font-family: var(--fontBold);
+    }
+    & svg {
+        margin-left: 10px;
+    }
+}
+.closeModalIcon {
+    cursor: pointer;
+}
+.contactDetailShareModalContent {
+}
+.contactDetailShareInput {
+    width: 390px;
+    height: 50px;
+    position: relative;
+    border-radius: 8px;
+    & textarea {
+        border: 1px solid #e7ecf0;
+        height: 100%;
+        width: 100%;
+        text-align: right;
+        padding: 0 20px;
+        border-radius: 8px;
+        padding-right: 50px;
+        resize: none;
+        font-family: var(--fontBold);
+        font-size: 15px;
+    }
+    & img {
+        position: absolute;
+        right: 20px;
+        cursor: pointer;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}
+.contactDetailShareSocial {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    & > a {
+        cursor: pointer;
+        width: 48px;
+        height: 48px;
+        border-radius: 8px;
+        background-color: var(--buttonColorNormal);
+        margin-right: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

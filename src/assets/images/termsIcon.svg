@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Scales_Legal_Protection" width="80.151" height="80.151" viewBox="0 0 80.151 80.151">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke:#2a2f33;stroke-linecap:round;stroke-linejoin:round;stroke-width:3.5px}
+        </style>
+    </defs>
+    <path id="Path_10013" fill="none" d="M0 0h80.151v80.151H0z"/>
+    <path id="Path_10014" d="M12 3v14.928" class="cls-2" transform="translate(28.076 7.019)"/>
+    <path id="Path_10015" d="M14.25 14.81h25.715" class="cls-2" transform="translate(33.34 34.65)"/>
+    <path id="Path_10016" d="M2.05 17.06h25.715" class="cls-2" transform="translate(4.796 39.914)"/>
+    <path id="Path_10017" d="M15.032 30.136a6.525 6.525 0 0 0-.718 4.321 13.152 13.152 0 0 0 25.809 0 6.525 6.525 0 0 0-.718-4.321L27.222 7.5l-12.19 22.636z" class="cls-2" transform="translate(33.235 17.547)"/>
+    <path id="Path_10018" d="M2.826 32.386a6.525 6.525 0 0 0-.718 4.321 13.154 13.154 0 0 0 25.812 0 6.525 6.525 0 0 0-.718-4.321L15.016 9.75 2.826 32.386z" class="cls-2" transform="translate(4.678 22.811)"/>
+    <path id="Path_10019" d="M46.661 8.172a57.913 57.913 0 0 0-38.52 6.272L5.9 15.686" class="cls-2" transform="translate(13.797 16.875)"/>
+</svg>

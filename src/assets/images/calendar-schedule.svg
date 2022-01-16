@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Calendar_Schedule" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#2a2f33;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px}
+        </style>
+    </defs>
+    <g id="Group_837" transform="translate(3 2)">
+        <path id="Path_10117" d="M8 6V2m8 4V2" class="cls-1" transform="translate(-3 -2)"/>
+        <path id="Path_10118" d="M3 9h18" class="cls-1" transform="translate(-3 -2)"/>
+        <path id="Path_10119" d="M3 6v13a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2z" class="cls-1" transform="translate(-3 -2)"/>
+    </g>
+    <path id="Path_10124" fill="none" d="M0 0h24v24H0z"/>
+</svg>

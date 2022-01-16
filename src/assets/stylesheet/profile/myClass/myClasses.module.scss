@@ -1,0 +1,657 @@
+@use "../../../../components/Kit/Style/kits.module.scss" as master;
+
+
+.myClassWrapper {
+    position: relative;
+    @media (max-width: master.$md) {
+        padding: 48px 34px;
+    }
+    @media (max-width: master.$sm) {
+        padding: 2px 24px 48px 24px;
+    }
+}
+
+.breadCrumb {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    @media (max-width: master.$xs) {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    & > p {
+        @extend .fontFamB;
+        color: var(--textColorPrimary);
+        margin: 0px;
+    }
+    & > svg {
+        margin-left: 7px;
+    }
+}
+.skeletonMyClassesMainContainer {
+    display: grid;
+    grid-template-columns: 362px 362px 362px;
+    column-gap: 25px;
+    row-gap: 25px;
+    margin-top: 25px;
+    @media (max-width: master.$xl) {
+        grid-template-columns: 287px 287px 287px;
+        column-gap: 19px;
+        row-gap: 19px;
+        margin-top: 19px;
+    }
+    @media (max-width: master.$md) {
+        grid-template-columns: calc(33.3333% - 13px) calc(33.3333% - 13px) calc(33.3333% - 13px);
+        column-gap: 19.5px;
+        row-gap: 19px;
+    }
+    @media (max-width: 1000px) {
+        grid-template-columns: calc(50% - 8.5px) calc(50% - 8.5px);
+        column-gap: 19px;
+        row-gap: 19px;
+        margin-top: 19px;
+    }
+    @media (max-width: master.$sm) {
+        grid-template-columns: 100%;
+        column-gap: 0;
+        row-gap: 19px;
+        margin-top: 19px;
+    }
+}
+.myClassMenuContainerDesktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & > div:nth-child(1) {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        & > .myClassMenuSearch {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            position: relative;
+            width: 362px;
+            height: 40px;
+            border: 1px solid rgba(12, 11, 49, 0.16);
+            border-radius: 24px;
+            padding: 0 12px;
+            margin-left: 25px;
+            @media (max-width: master.$lg) {
+                width: 287px;
+            }
+            & > input {
+                border: none;
+                width: 100%;
+                height: 100%;
+                outline: none !important;
+                @extend .fontFamR;
+                transition: ease all 300ms;
+                border-radius: 24px;
+                &::placeholder {
+                    color: rgba(12, 11, 49, 0.5);
+                }
+            }
+        }
+    }
+    & > button {
+        width: 115px;
+        text-align: center;
+        background-color: var(--buttonColorNormal);
+        border-radius: 20px;
+        font-size: 13px;
+        color: white;
+        @extend .fontFamR;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        padding: 0 7px 0 19px;
+        &:hover {
+            background-color: var(--buttonColorHover);
+            cursor: pointer;
+        }
+    }
+    & > button:focus {
+        outline: none;
+    }
+}
+
+.myClassDesktopContainer {
+    width: 100%;
+
+    & > .allResultForSearch {
+        margin: 50px 0 20px 0;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    & > .numOfResultForSearch {
+        font-size: 13px;
+        line-height: 18px;
+        color: rgba(12, 11, 49, 0.8);
+        margin: 0px;
+    }
+
+    & > .myClassesGridView {
+        display: grid;
+        grid-template-columns: 362px 362px 362px;
+        column-gap: 25px;
+        row-gap: 25px;
+        margin-top: 40px;
+        @media (max-width: master.$xl) {
+            grid-template-columns: 287px 287px 287px;
+            column-gap: 19px; 
+            row-gap: 19px;
+            margin-top: 30px;
+        }
+        @media (max-width: master.$md) {
+            grid-template-columns: calc(33.3333% - 13px) calc(33.3333% - 13px) calc(33.3333% - 13px);
+            column-gap: 19.5px;
+            row-gap: 19px;
+        }
+        @media (max-width: 1000px) {
+            grid-template-columns: calc(50% - 8.5px) calc(50% - 8.5px);
+            column-gap: 19px;
+            row-gap: 19px;
+        }
+        @media (max-width: master.$sm) {
+            grid-template-columns: 100%;
+            column-gap: 0;
+            row-gap: 19px;
+        }
+        & > .classItemCardContainer {
+            width: 100%;
+            padding: 30px;
+            border: 1px solid rgba(12, 11, 49, 0.16);
+            border-radius: 10px;
+            &:hover {
+                border: 1px solid var(--buttonColorNormal);
+            }
+
+            & > div > .classProfileInfoContainer {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                justify-content: flex-start;
+                margin-bottom: 30px;
+                & > div {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    & > .classNamesContainer {
+                        margin-right: 11px;
+                        & > :nth-child(1) {
+                            font-size: 13px;
+                            color: var(--textColorPrimary);
+                            margin: 0 0 7px 0;
+                        }
+                        & > :nth-child(2) {
+                            font-size: 13px;
+                            color: rgba(12, 11, 49, 0.7);
+                            margin: 0px;
+                        }
+                    }
+                }
+            }
+
+            & > div > .classMembersContainer {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                & > .classMembersDetails {
+                    font-size: 13px;
+                }
+                & > .classSituationBtn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    & > a {
+                        font-size: 12px;
+                        margin-left: 20px;
+                        color: var(--buttonColorNormal);
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                    & > p {
+                        margin: 0px;
+                        font-size: 13px;
+                    }
+
+                    & > .loginClass {
+                        all: unset;
+                        border-radius: 15px;
+                        cursor: pointer;
+                        background-color: #fff;
+                        color: var(--buttonColorNormal);
+                        height: 30px;
+                        width: 73px;
+                        box-sizing: border-box;
+                        padding: 10px 14px;
+                        text-align: center;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-size: 13px;
+                        border: 1px solid var(--buttonColorNormal);
+                        transition: all 0.3s ease-in-out;
+                        & > span {
+                            font-size: 12px;
+                        }
+                    }
+                    & > .loginClass:hover {
+                        background-color: var(--buttonColorNormal);
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    & > .noClassFoundContainer {
+        margin: 95px auto 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        & > .noClassFoundImg {
+            width: 244px;
+            @media (max-width: master.$lg) {
+                width: 214px;
+            }
+        }
+        & > :nth-child(2) {
+            margin: 30px 0 0 0;
+            font-size: 14px;
+            line-height: 14px;
+            color: var(--textColorPrimary);
+            @media (max-width: master.$lg) {
+                font-size: 13px;
+            }
+        }
+        & > :nth-child(3) {
+            margin: 16px 0 0 0;
+            font-size: 13px;
+            line-height: 14px;
+            color: rgba(12, 11, 49, 0.8);
+            @media (max-width: master.$lg) {
+                font-size: 12px;
+            }
+        }
+        & > button {
+            margin-top: 30px;
+            width: 126px;
+            height: 48px;
+            padding: 0px 14px 0px 24px;
+            text-align: center;
+            background-color: var(--buttonColorNormal);
+            border-radius: 24px;
+            font-size: 13px;
+            color: white;
+            @extend .fontFamR;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media (max-width: master.$lg) {
+                height: 40px;
+                width: 112px;
+                font-size: 12px;
+                padding: 0 10px 0 16px;
+            }
+        }
+        & > button:focus {
+            outline: none;
+        }
+    }
+}
+
+
+.classSettingsGridContainer {
+    display: grid;
+    margin-top: 15px;
+    grid-template-columns: 362px 362px 362px;
+    column-gap: 25px;
+    @media (max-width: master.$lg) {
+        grid-template-columns: 287px 287px 287px;
+        column-gap: 19px;
+        row-gap: 20px;
+    }
+    @media (max-width: master.$md) {
+        grid-template-columns: calc(33.33333% - 13px) calc(33.33333% - 13px) calc(33.33333% - 13px);
+        column-gap: 19.5px;
+        row-gap: 20px;
+    }
+    @media (max-width: master.$md) {
+        grid-template-columns: calc(50% - 9.5px) calc(50% - 9.5px);
+        column-gap: 19px;
+        row-gap: 20px;
+    }
+    @media (max-width: master.$sm) {
+        grid-template-columns: 100%;
+        padding: 0 24px;
+        row-gap: 20px;
+    }
+}
+
+.myClassSettingContainer {
+    width: 100%;
+}
+
+.myClassMobile {
+    width: 100%;
+    margin: 0px auto;
+    & > .allResultForSearch {
+        margin: 4px 0 12px 0;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    & > .numOfResultForSearch {
+        font-size: 13px;
+        line-height: 18px;
+        color: rgba(12, 11, 49, 0.8);
+        margin: 0px 0px 30px 0px;
+    }
+
+    & > .mobileClassItemGrid {
+        display: grid;
+        grid-template-columns: 100%;
+        row-gap: 19px;
+        & > .classItemCardContainer {
+            width: 100%;
+            padding: 30px;
+            border: 1px solid rgba(12, 11, 49, 0.16);
+            border-radius: 10px;
+
+            & > div > .classProfileInfoContainer {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                justify-content: flex-start;
+                margin-bottom: 30px;
+                & > div {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    & > .classNamesContainer {
+                        margin-right: 11px;
+                        & > :nth-child(1) {
+                            font-size: 13px;
+                            color: var(--textColorPrimary);
+                            margin: 0 0 7px 0;
+                        }
+                        & > :nth-child(2) {
+                            font-size: 13px;
+                            color: rgba(12, 11, 49, 0.7);
+                            margin: 0px;
+                        }
+                    }
+                }
+            }
+
+            & > div > .classMembersContainer {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                & > .classMembersDetails {
+                    font-size: 13px;
+                }
+                & > .classSituationBtn {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    & > a {
+                        font-size: 12px;
+                        margin-left: 20px;
+                        color: var(--buttonColorNormal);
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+
+                    & > p {
+                        margin: 0px;
+                        font-size: 13px;
+                    }
+
+                    & > .loginClass {
+                        all: unset;
+                        border-radius: 15px;
+                        cursor: pointer;
+                        background-color: #fff;
+                        color: var(--buttonColorNormal);
+                        height: 30px;
+                        width: 73px;
+                        box-sizing: border-box;
+                        padding: 10px 14px;
+                        text-align: center;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-size: 13px;
+                        border: 1px solid var(--buttonColorNormal);
+                        transition: all 0.3s ease-in-out;
+                        & > span {
+                            font-size: 12px;
+                        }
+                    }
+                    & > .loginClass:hover {
+                        background-color: var(--buttonColorNormal);
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    & > .noClassFoundContainer {
+        margin: 95px auto 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        & > .noClassFoundImg {
+            width: 244px;
+        }
+        & > :nth-child(2) {
+            margin: 30px 0 0 0;
+            font-size: 13px;
+            line-height: 14px;
+            color: var(--textColorPrimary);
+            text-align: center;
+        }
+        & > :nth-child(3) {
+            margin: 16px 0 0 0;
+            font-size: 13px;
+            line-height: 14px;
+            color: rgba(12, 11, 49, 0.8);
+            text-align: center;
+        }
+        & > button {
+            margin-top: 30px;
+            width: 126px;
+            height: 48px;
+            text-align: center;
+            background-color: var(--buttonColorNormal);
+            border-radius: 24px;
+            padding: 0px 14px 0px 24px;
+            font-size: 13px;
+            color: white;
+            @extend .fontFamR;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        & > button:focus {
+            outline: none;
+        }
+    }
+}
+
+
+
+.inThisClassSameClassesGridView {
+    display: grid;
+    grid-template-columns: 362px 362px 362px;
+    column-gap: 25px;
+    row-gap: 25px;
+    margin-top: 40px;
+    @media (max-width: master.$lg) {
+        grid-template-columns: 287px 287px 287px;
+        column-gap: 19px;
+        row-gap: 19px;
+        margin-top: 30px;
+    }
+    @media (max-width: master.$md) {
+        grid-template-columns: calc(33.3333% - 13px) calc(33.3333% - 13px) calc(33.3333% - 13px);
+        column-gap: 19.5px;
+        row-gap: 19px;
+    }
+    @media (max-width: 1000px) {
+        grid-template-columns: calc(50% - 10.5px) calc(50% - 10.5px);
+        column-gap: 19px;
+        row-gap: 19px;
+    }
+    @media (max-width: 800px) {
+        grid-template-columns: 100%;
+        row-gap: 19px;
+        padding: 0 34px 28px;
+    }
+    & > .classItemCardContainer {
+        width: 100%;
+        padding: 30px;
+        border: 1px solid rgba(12, 11, 49, 0.16);
+        border-radius: 10px;
+
+        & > div > .classProfileInfoContainer {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin-bottom: 30px;
+            & > div {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                & > .classNamesContainer {
+                    margin-right: 11px;
+                    & > :nth-child(1) {
+                        font-size: 13px;
+                        color: var(--textColorPrimary);
+                        margin: 0 0 7px 0;
+                    }
+                    & > :nth-child(2) {
+                        font-size: 13px;
+                        color: rgba(12, 11, 49, 0.7);
+                        margin: 0px;
+                    }
+                }
+            }
+        }
+
+        & > div > .classMembersContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            & > .classMembersDetails {
+                font-size: 13px;
+            }
+            & > .classSituationBtn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                & > a {
+                    font-size: 12px;
+                    margin-left: 20px;
+                    color: var(--buttonColorNormal);
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+                & > p {
+                    margin: 0px;
+                    font-size: 13px;
+                }
+
+                & > .loginClass {
+                    all: unset;
+                    border-radius: 15px;
+                    cursor: pointer;
+                    background-color: #fff;
+                    color: var(--buttonColorNormal);
+                    height: 30px;
+                    width: 73px;
+                    box-sizing: border-box;
+                    padding: 10px 14px;
+                    text-align: center;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 13px;
+                    border: 1px solid var(--buttonColorNormal);
+                    transition: all 0.3s ease-in-out;
+                    & > span {
+                        font-size: 12px;
+                    }
+                }
+                & > .loginClass:hover {
+                    background-color: var(--buttonColorNormal);
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.classAvatar {
+    width: 48px;
+    height: 48px;
+    font-size: 16px;
+    border-radius: 50%;
+    & svg {
+        font-size: 22px;
+    }
+}
+.borderNone {
+    border: none !important;
+}
+.classAvatarBorder {
+    border-radius: 100px;
+    padding: 0;
+    position: relative;
+}
+.chatIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.loginClassDisabled {
+    @extend .disabledBtn;
+    border: 1px solid #cdccd7 !important;
+    color: rgba(12, 11, 39, 0.3) !important;
+    background-color: white !important;
+    cursor: auto !important;
+}
+.loadMoreBtnContainer {
+    width: 150px;
+    margin: 100px auto 0 auto;
+    & > button {
+        @extend .btn_height48_A;
+        @extend .fontFamR;
+    }
+}
